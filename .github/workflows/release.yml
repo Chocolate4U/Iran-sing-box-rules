@@ -3,7 +3,7 @@ name: Generate sing-box routing rules
 on:
   workflow_dispatch:
   schedule:
-    - cron: "20 8 * * *"
+    - cron: "35 8 * * *"
 
 jobs:
   build:
