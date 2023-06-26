@@ -1,4 +1,4 @@
-name: Generate v2ray routing rules
+name: Generate sing-box routing rules
 
 on:
   workflow_dispatch:
