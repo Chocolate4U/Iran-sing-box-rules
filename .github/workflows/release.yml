@@ -1,0 +1,46 @@
+name: Generate v2ray routing rules
+
+on:
+  workflow_dispatch:
+  schedule:
+    - cron: "30 9 * * *"
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    
+    steps:
+      - uses: actions/checkout@v3
+
+      - name: Setup Go
+        uses: actions/setup-go@v4
+        with:
+          go-version: 'stable'
+          cache: false
+
+      - name: Set ENV variables
+        run: |
+          echo "RELEASE_NAME=$(date +%Y%m%d%H%M)" >> $GITHUB_ENV
+          echo "TAG_NAME=$(date +%Y%m%d%H%M)" >> $GITHUB_ENV
+
+      - name: Generate geosite.db file
+        run: |
+          mkdir -p release
+          git clone https://github.com/chocolate4u/Iran-singbox-db-rules.git
+          cd Iran-singbox-db-rules
+          go run -v .
+          sha256sum geosite.db > geosite.db.sha256sum
+          cp geosite.db ../release
+          cp geosite.db.sha256sum ../release
+
+      - name: Release and upload assets
+        uses: softprops/action-gh-release@v1
+        with:
+          name: ${{ env.RELEASE_NAME }}
+          tag_name: ${{ env.TAG_NAME }}
+          draft: false
+          prerelease: false
+          files: |
+            ./release/*
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
