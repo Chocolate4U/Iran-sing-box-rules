@@ -3,7 +3,7 @@ name: Generate sing-box routing rules
 on:
   workflow_dispatch:
   schedule:
-    - cron: "30 9 * * *"
+    - cron: "20 8 * * *"
 
 jobs:
   build:
@@ -22,6 +22,7 @@ jobs:
         run: |
           echo "RELEASE_NAME=$(date +%Y%m%d%H%M)" >> $GITHUB_ENV
           echo "TAG_NAME=$(date +%Y%m%d%H%M)" >> $GITHUB_ENV
+          echo "RELEASE_DATE=$(date +'%F %T %Z')" >> $GITHUB_ENV
 
       - name: Generate geosite.db file
         run: |
@@ -32,12 +33,18 @@ jobs:
           sha256sum geosite.db > geosite.db.sha256sum
           cp geosite.db ../release
           cp geosite.db.sha256sum ../release
+          
+      - name: Generate Release Notes
+        run: | 
+          echo "* Updated on ${{ env.RELEASE_DATE }}" > RELEASE_NOTES
+          echo "* Based on [Iran-v2ray-dat-rules](https://github.com/chocolate4u/Iran-v2ray-dat-rules)" >> RELEASE_NOTES
 
       - name: Release and upload assets
         uses: softprops/action-gh-release@v1
         with:
           name: ${{ env.RELEASE_NAME }}
           tag_name: ${{ env.TAG_NAME }}
+          body_path: RELEASE_NOTES
           draft: false
           prerelease: false
           files: |
