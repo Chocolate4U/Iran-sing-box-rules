@@ -11,12 +11,15 @@ jobs:
     
     steps:
       - uses: actions/checkout@v3
+      
+      - name: Clone Chocolate4U/sing-geosite repository
+        run: git clone https://github.com/Chocolate4U/sing-geosite.git
 
       - name: Setup Go
         uses: actions/setup-go@v4
         with:
           go-version: 'stable'
-          cache: false
+          cache-dependency-path: sing-geosite/go.sum
 
       - name: Set ENV variables
         run: |
@@ -26,18 +29,17 @@ jobs:
 
       - name: Generate geosite.db file
         run: |
-          mkdir -p release
-          git clone https://github.com/chocolate4u/sing-geosite.git
           cd sing-geosite
           go run -v .
           sha256sum geosite.db > geosite.db.sha256sum
+          mkdir -p release
           cp geosite.db ../release
           cp geosite.db.sha256sum ../release
           
       - name: Generate Release Notes
         run: | 
           echo "* Updated on ${{ env.RELEASE_DATE }}" > RELEASE_NOTES
-          echo "* Based on [Iran-v2ray-rules](https://github.com/chocolate4u/Iran-v2ray-rules)" >> RELEASE_NOTES
+          echo "* Based on [Iran-v2ray-rules](https://github.com/Chocolate4U/Iran-v2ray-rules)" >> RELEASE_NOTES
 
       - name: Release and upload assets
         uses: softprops/action-gh-release@v1
