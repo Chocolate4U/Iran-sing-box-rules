@@ -29,10 +29,10 @@ jobs:
 
       - name: Generate geosite.db file
         run: |
+          mkdir -p release
           cd sing-geosite
           go run -v .
           sha256sum geosite.db > geosite.db.sha256sum
-          mkdir -p release
           cp geosite.db ../release
           cp geosite.db.sha256sum ../release
           
