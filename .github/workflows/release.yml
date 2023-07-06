@@ -3,7 +3,7 @@ name: Generate sing-box routing rules
 on:
   workflow_dispatch:
   schedule:
-    - cron: "45 5 * * *"
+    - cron: "50 5 * * *"
 
 jobs:
   build:
@@ -27,33 +27,22 @@ jobs:
           echo "TAG_NAME=$(date +%Y%m%d%H%M)" >> $GITHUB_ENV
           echo "RELEASE_DATE=$(date +'%F %T %Z')" >> $GITHUB_ENV
 
+      - name: Create release directory
+        run: mkdir release
+
       - name: Generate geosite.db file
         run: |
-          mkdir -p release
           cd sing-geosite
           go run -v .
           sha256sum geosite.db > geosite.db.sha256sum
-          cp geosite.db ../release
-          cp geosite.db.sha256sum ../release
+          mv geosite.db ../release/geosite.db
+          mv geosite.db.sha256sum ../release/geosite.db.sha256sum
           
       - name: Generate Release Notes
         run: | 
           echo "* Updated on ${{ env.RELEASE_DATE }}" > RELEASE_NOTES
           echo "* Based on [Iran-v2ray-rules](https://github.com/Chocolate4U/Iran-v2ray-rules)" >> RELEASE_NOTES
 
-      - name: Release and upload assets
-        uses: softprops/action-gh-release@v1
-        with:
-          name: ${{ env.RELEASE_NAME }}
-          tag_name: ${{ env.TAG_NAME }}
-          body_path: RELEASE_NOTES
-          draft: false
-          prerelease: false
-          files: |
-            ./release/*
-        env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-      
       - name: Push assets to release branch
         run: |
           cd release || exit 1
@@ -65,9 +54,21 @@ jobs:
           git commit -m "${{ env.RELEASE_NAME }}"
           git remote add origin "https://${{ github.actor }}:${{ secrets.GITHUB_TOKEN }}@github.com/${{ github.repository }}"
           git push -f origin release
-      - name: Purge jsdelivr CDN
+      - name: Purge jsdelivr CDN cache
         run: |
           cd release || exit 1
           for file in $(ls); do
             curl -i "https://purge.jsdelivr.net/gh/${{ github.repository }}@release/${file}"
           done
+
+      - name: Release and upload assets
+        uses: softprops/action-gh-release@v1
+        with:
+          name: ${{ env.RELEASE_NAME }}
+          tag_name: ${{ env.TAG_NAME }}
+          body_path: RELEASE_NOTES
+          draft: false
+          prerelease: false
+          files: ./release/*
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
