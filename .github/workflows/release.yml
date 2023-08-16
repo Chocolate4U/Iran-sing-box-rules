@@ -11,15 +11,12 @@ jobs:
     
     steps:
       - uses: actions/checkout@v3
-      
-      - name: Clone Chocolate4U/sing-geosite repository
-        run: git clone https://github.com/Chocolate4U/sing-geosite.git
 
       - name: Setup Go
         uses: actions/setup-go@v4
         with:
-          go-version: 'stable'
-          cache-dependency-path: sing-geosite/go.sum
+          go-version: '1.20'
+          cache: false
 
       - name: Set ENV variables
         run: |
@@ -30,13 +27,24 @@ jobs:
       - name: Create release directory
         run: mkdir release
 
+      - name: Generate geoip.db file
+        run: |
+          git clone https://github.com/Chocolate4U/sing-geoip.git
+          cd sing-geoip
+          go run -v .
+          mv geoip.db ../release/geoip.db
+
       - name: Generate geosite.db file
         run: |
+          git clone https://github.com/Chocolate4U/sing-geosite.git
           cd sing-geosite
           go run -v .
-          sha256sum geosite.db > geosite.db.sha256sum
           mv geosite.db ../release/geosite.db
-          mv geosite.db.sha256sum ../release/geosite.db.sha256sum
+
+      - name: Generate sha256sum
+        run: |
+          sha256sum release/geoip.db > release/geoip.db.sha256sum
+          sha256sum release/geosite.db > release/geosite.db.sha256sum
           
       - name: Generate Release Notes
         run: | 
