@@ -7,6 +7,9 @@
 # :writing_hand: Introduction
 This is an Enhanced and All-in-One set of geo-location routing files optimized for Iranian users to use in sing-box and all it's compatible clients.
 
+:information_source: For V2Ray geolocation rules please refer to [Iran V2Ray Rules](https://github.com/Chocolate4U/Iran-v2ray-rules)  
+:information_source: For Clash geolocation rules please refer to [Iran Clash Rules](https://github.com/Chocolate4U/Iran-clash-rules)
+
 # :page_with_curl: Categories
 
 ## GeoIP  
