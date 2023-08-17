@@ -1,23 +1,29 @@
-# :earth_asia: Iran Sing-Box Rules
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="assets/logo-white.png">
+  <source media="(prefers-color-scheme: light)" srcset="assets/logo-dark.png">
+  <img alt="a logo for iran v2ray rules in both dark and light mode" src="assets/logo-dark.png">
+</picture>
+
+# :writing_hand: Introduction
 This is an Enhanced and All-in-One set of geo-location routing files optimized for Iranian users to use in sing-box and all it's compatible clients.
 
-# :scroll: Categories
+# :page_with_curl: Categories
 
 ## GeoIP  
 `geoip:ir`  
-: Contains Iran IP adresses from Maxmind database and IP adresses of Iranian messengers such as `eitaa`, `rubika`, etc.
+: Contains Iran IP addresses from Maxmind database and IP addresses of Iranian messengers such as `eitaa`, `rubika`, etc.
 
 `geoip:private`  
-: Contains a list of local (LAN) IP adresses.
+: Contains a list of local (LAN) IP addresses.
 
 `geoip:arvancloud`  
-: Contains IP adresses of ArvanCloud.ir CDN.
+: Contains IP addresses of ArvanCloud.ir CDN.
 
 `geoip:derakcloud`  
-: Contains IP adresses of Derak.cloud CDN.
+: Contains IP addresses of Derak.cloud CDN.
 
 `geoip:iranserver`  
-: Contains IP adresses of IranServer.com CDN.
+: Contains IP addresses of IranServer.com CDN.
 
 ## GeoSite  
 `geosite:ir`  
@@ -36,15 +42,15 @@ This is an Enhanced and All-in-One set of geo-location routing files optimized f
 : Contains a list of cryptocurrency miners that run in the background of a web browser and affect system performance.  
 
 # :arrow_down: How to download
-## From GitHub
+## <img src="https://cdn.jsdelivr.net/npm/simple-icons@v9/icons/github.svg" /> From GitHub
 [https://github.com/chocolate4u/Iran-sing-box-rules/releases/latest/download/geoip.db](https://github.com/chocolate4u/Iran-sing-box-rules/releases/latest/download/geoip.db)  
 [https://github.com/chocolate4u/Iran-sing-box-rules/releases/latest/download/geosite.db](https://github.com/chocolate4u/Iran-sing-box-rules/releases/latest/download/geosite.db)  
 
-## From jsdelivr CDN
+## <img src="https://cdn.jsdelivr.net/npm/simple-icons@v9/icons/jsdelivr.svg" /> From jsdelivr CDN
 [https://cdn.jsdelivr.net/gh/chocolate4u/Iran-sing-box-rules@release/geoip.db](https://cdn.jsdelivr.net/gh/chocolate4u/Iran-sing-box-rules@release/geoip.db)  
 [https://cdn.jsdelivr.net/gh/chocolate4u/Iran-sing-box-rules@release/geosite.db](https://cdn.jsdelivr.net/gh/chocolate4u/Iran-sing-box-rules@release/geosite.db)  
 
-# :writing_hand: Usage
+# :computer: Usage
 ## sing-box core
 Add the following to your sing-box client configuration:
 ```
@@ -108,7 +114,7 @@ All contributions are welcome and appreciated. You can contribute to this projec
 
 
 # :copyright: License
-This project, except for upstream sources, is licensed under the GNU GPLv3 License - see the [LICENSE](https://github.com/Chocolate4U/Iran-sing-box-rules/blob/main/LICENSE) file for details.
+This project, except for upstream sources, is licensed under the GNU GPLv3 License - see the [LICENSE](LICENSE) file for details.
 
 All rights are reserved for All upstream sources used in this project according to their respective licenses. Please refer to [Sources](#sources) section for more details.
 
@@ -140,5 +146,5 @@ This repository is not affiliated, associated, authorized, endorsed by, or in an
 The data in this repository is gathered from publicly available resources and is provided as-is, intended for informational purposes only with no guarantee of accuracy, liability or availability. We are not responsible for any harm or damage that may arise from using the data in this repository, and you, as the user, are the sole responsible for using it.
 
 # :pray: Special Thanks
-- All list maintainers that mentioned in this project.
+- All maintainers that mentioned in this project.
 - [Project S](https://github.com/SagerNet)
