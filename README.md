@@ -42,11 +42,11 @@ This is an Enhanced and All-in-One set of geo-location routing files optimized f
 : Contains a list of cryptocurrency miners that run in the background of a web browser and affect system performance.  
 
 # :arrow_down: How to download
-## <img src="https://cdn.jsdelivr.net/npm/simple-icons@v9/icons/github.svg" /> From GitHub
+## <img height="32" width="32" src="https://cdn.jsdelivr.net/npm/simple-icons@v9/icons/github.svg" /> From GitHub
 [https://github.com/chocolate4u/Iran-sing-box-rules/releases/latest/download/geoip.db](https://github.com/chocolate4u/Iran-sing-box-rules/releases/latest/download/geoip.db)  
 [https://github.com/chocolate4u/Iran-sing-box-rules/releases/latest/download/geosite.db](https://github.com/chocolate4u/Iran-sing-box-rules/releases/latest/download/geosite.db)  
 
-## <img src="https://cdn.jsdelivr.net/npm/simple-icons@v9/icons/jsdelivr.svg" /> From jsdelivr CDN
+## <img height="32" width="32" src="https://cdn.jsdelivr.net/npm/simple-icons@v9/icons/jsdelivr.svg" /> From jsdelivr CDN
 [https://cdn.jsdelivr.net/gh/chocolate4u/Iran-sing-box-rules@release/geoip.db](https://cdn.jsdelivr.net/gh/chocolate4u/Iran-sing-box-rules@release/geoip.db)  
 [https://cdn.jsdelivr.net/gh/chocolate4u/Iran-sing-box-rules@release/geosite.db](https://cdn.jsdelivr.net/gh/chocolate4u/Iran-sing-box-rules@release/geosite.db)  
 
