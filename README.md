@@ -1,14 +1,14 @@
 <picture>
   <source media="(prefers-color-scheme: dark)" srcset="assets/logo-white.png">
   <source media="(prefers-color-scheme: light)" srcset="assets/logo-dark.png">
-  <img alt="a logo for iran v2ray rules in both dark and light mode" src="assets/logo-dark.png">
+  <img alt="a logo for iran sing-box rules in both dark and light mode" src="assets/logo-dark.png">
 </picture>
 
 <p align="center">
-<img alt="GitHub Workflow Status (with event)" src="https://img.shields.io/github/actions/workflow/status/Chocolate4U/Iran-sing-box-rules/release.yml?event=schedule&logo=github">
-<img alt="GitHub release (with filter)" src="https://img.shields.io/github/v/release/Chocolate4U/Iran-sing-box-rules">
-<img alt="GitHub Release Date - Published_At" src="https://img.shields.io/github/release-date/Chocolate4U/Iran-sing-box-rules">
-<img alt="GitHub" src="https://img.shields.io/github/license/Chocolate4U/Iran-sing-box-rules">
+<img alt="GitHub Workflow Status" src="https://img.shields.io/github/actions/workflow/status/Chocolate4U/Iran-sing-box-rules/release.yml?event=schedule&logo=github">
+<img alt="GitHub release" src="https://img.shields.io/github/v/release/Chocolate4U/Iran-sing-box-rules">
+<img alt="GitHub Release Date" src="https://img.shields.io/github/release-date/Chocolate4U/Iran-sing-box-rules">
+<img alt="license" src="https://img.shields.io/github/license/Chocolate4U/Iran-sing-box-rules">
 </p>
 
 # :writing_hand: Introduction
