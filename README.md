@@ -80,30 +80,44 @@ This is an Enhanced and All-in-One set of geo-location routing files optimized f
 - `geoip:malware`  
   Contains Active Malware IP addresses.
 
+## GeoIP-Lite
+- `geoip:ir`  
+  Contains Iran IP addresses from Maxmind database and IP addresses of Iranian messengers such as `eitaa`, `rubika`, etc.
+
+- `geoip:private`  
+  Contains a list of local (LAN) IP addresses.
+
 ## GeoSite  
 - `geosite:ir`  
   Contains non-ir TLD Iranian domains (e.g. `.com` `.net` `.org` etc.) and rules to bypass all `.ir` domains.
 
 - `geosite:ads`  
+  Contains a list of Persian advertisement and tracking domains.
+
+- `geosite:category-ads-all`  
   Contains a curated list of Persian and Foreign advertisement and tracking domains based on multiple sources. It is optimized to has as low as possible false positives while also retain small size and efficiency.
 
 - `geosite:malware`  
   Contains a list of active malware domains.
 
-- `geosite:category-ads-all`  
-  Contains domains from `geosite:ads` and `geosite:malware`.
-
 - `geosite:phishing`  
-  Contains a list of scam and phishing domains.  
+  Contains a list of scam and phishing domains.
 
 - `geosite:cryptominers`  
-  Contains a list of cryptocurrency miners that run in the background of a web browser and affect system performance.  
+  Contains a list of cryptocurrency miners that run in the background of a web browser and affect system performance.
 
 - `geosite:social`  
   Contains Domain Addresses of popular social media platforms, including `Facebook`, `Instagram`, `Whatsapp`, `Twitter`, `LinkedIn`, `MySpace`, `Pinterest`, `Tumblr`, `Reddit`, `TikTok`, `clubhouse`.
 
 - `geosite:nsfw`
   Contains a list of porn and gambling websites.
+
+## GeoSite Lite
+- `geosite:ir`  
+  Contains non-ir TLD Iranian domains (e.g. `.com` `.net` `.org` etc.) and rules to bypass all `.ir` domains.
+
+- `geosite:ads`  
+  Contains a list of Persian advertisement and tracking domains.
 
 # :arrow_down: How to download
 ## <picture><source media="(prefers-color-scheme: dark)" srcset="https://cdn.simpleicons.org/github/white"><source media="(prefers-color-scheme: light)" srcset="https://cdn.simpleicons.org/github/dark"><img height="32" width="32" alt="github logo in dark and light mode." src="https://cdn.simpleicons.org/github/dark"></picture> From GitHub
@@ -138,7 +152,7 @@ Add the following to your sing-box client configuration:
   "rules": [
     {
       "geosite": [
-        "ads",
+        "category-ads-all",
         "malware",
         "phishing",
         "cryptominers"
@@ -149,19 +163,19 @@ Add the following to your sing-box client configuration:
       "geoip": [
         "malware",
         "phishing"
-        ],
+      ],
       "outbound": "block"
-    }
+    },
     {
       "geosite": "ir",
       "outbound": "direct"
     },
     {
       "geoip": [
-          "ir",
-          "private",
-          "arvancloud"
-        ],,
+        "ir",
+        "private",
+        "arvancloud"
+      ],
       "outbound": "direct"
     }
   ]
