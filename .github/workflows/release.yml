@@ -3,14 +3,14 @@ name: Generate sing-box routing rules
 on:
   workflow_dispatch:
   schedule:
-    - cron: "50 5 * * *"
+    - cron: "50 3 * * *"
 
 jobs:
   build:
     runs-on: ubuntu-latest
     
     steps:
-      - uses: actions/checkout@v3
+      - uses: actions/checkout@v4
 
       - name: Setup Go
         uses: actions/setup-go@v4
@@ -65,7 +65,7 @@ jobs:
           git remote add origin "https://${{ github.actor }}:${{ secrets.GITHUB_TOKEN }}@github.com/${{ github.repository }}"
           git push -f origin release
 
-      - name: Purge jsdelivr CDN cache
+      - name: Purge jsDelivr CDN cache
         run: |
           cd release || exit 1
           for file in $(ls); do
