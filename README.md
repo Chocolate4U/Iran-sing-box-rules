@@ -11,6 +11,8 @@
 <img alt="License" src="https://img.shields.io/github/license/Chocolate4U/Iran-sing-box-rules?style=for-the-badge&color=blue&cacheSeconds=3600">
 </p>
 
+[فارسی](README.fa.md)  
+
 # :writing_hand: Introduction
 This is an Enhanced and All-in-One set of geo-location routing files optimized for Iranian users to use in sing-box and all it's compatible clients.
 
