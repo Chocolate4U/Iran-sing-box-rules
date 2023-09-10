@@ -123,12 +123,18 @@ This is an Enhanced and All-in-One set of geo-location routing files optimized f
 
 # :arrow_down: How to download
 ## <picture><source media="(prefers-color-scheme: dark)" srcset="https://cdn.simpleicons.org/github/white"><source media="(prefers-color-scheme: light)" srcset="https://cdn.simpleicons.org/github/dark"><img height="32" width="32" alt="github logo in dark and light mode." src="https://cdn.simpleicons.org/github/dark"></picture> From GitHub
-[https://github.com/chocolate4u/Iran-sing-box-rules/releases/latest/download/geoip.db](https://github.com/chocolate4u/Iran-sing-box-rules/releases/latest/download/geoip.db)  
-[https://github.com/chocolate4u/Iran-sing-box-rules/releases/latest/download/geosite.db](https://github.com/chocolate4u/Iran-sing-box-rules/releases/latest/download/geosite.db)  
+`GeoIP` [https://github.com/chocolate4u/Iran-sing-box-rules/releases/latest/download/geoip.db](https://github.com/chocolate4u/Iran-sing-box-rules/releases/latest/download/geoip.db)  
+`GeoSite` [https://github.com/chocolate4u/Iran-sing-box-rules/releases/latest/download/geosite.db](https://github.com/chocolate4u/Iran-sing-box-rules/releases/latest/download/geosite.db)  
+
+`GeoIP-Lite` [https://github.com/chocolate4u/Iran-sing-box-rules/releases/latest/download/geoip-lite.db](https://github.com/chocolate4u/Iran-sing-box-rules/releases/latest/download/geoip-lite.db)  
+`GeoSite-Lite` [https://github.com/chocolate4u/Iran-sing-box-rules/releases/latest/download/geosite-lite.db](https://github.com/chocolate4u/Iran-sing-box-rules/releases/latest/download/geosite-lite.db)  
 
 ## <picture><source media="(prefers-color-scheme: dark)" srcset="https://cdn.simpleicons.org/jsdelivr/white"><source media="(prefers-color-scheme: light)" srcset="https://cdn.simpleicons.org/jsdelivr/dark"><img height="32" width="32" alt="github logo in dark and light mode." src="https://cdn.simpleicons.org/jsdelivr/dark"></picture> From jsdelivr CDN
-[https://cdn.jsdelivr.net/gh/chocolate4u/Iran-sing-box-rules@release/geoip.db](https://cdn.jsdelivr.net/gh/chocolate4u/Iran-sing-box-rules@release/geoip.db)  
-[https://cdn.jsdelivr.net/gh/chocolate4u/Iran-sing-box-rules@release/geosite.db](https://cdn.jsdelivr.net/gh/chocolate4u/Iran-sing-box-rules@release/geosite.db)  
+`GeoIP` [https://cdn.jsdelivr.net/gh/chocolate4u/Iran-sing-box-rules@release/geoip.db](https://cdn.jsdelivr.net/gh/chocolate4u/Iran-sing-box-rules@release/geoip.db)  
+`GeoSite` [https://cdn.jsdelivr.net/gh/chocolate4u/Iran-sing-box-rules@release/geosite.db](https://cdn.jsdelivr.net/gh/chocolate4u/Iran-sing-box-rules@release/geosite.db)  
+
+`GeoIP-Lite` [https://cdn.jsdelivr.net/gh/chocolate4u/Iran-sing-box-rules@release/geoip-lite.db](https://cdn.jsdelivr.net/gh/chocolate4u/Iran-sing-box-rules@release/geoip-lite.db)  
+`GeoSite-Lite` [https://cdn.jsdelivr.net/gh/chocolate4u/Iran-sing-box-rules@release/geosite-lite.db](https://cdn.jsdelivr.net/gh/chocolate4u/Iran-sing-box-rules@release/geosite-lite.db)  
 
 # :computer: Usage
 ## sing-box core
@@ -185,8 +191,8 @@ Add the following to your sing-box client configuration:
 ```
 
 # :information_desk_person: How is this made?  
-`geoip.db` is generated using source code from my [fork](https://github.com/Chocolate4U/sing-geoip) of [sing-geoip](https://github.com/SagerNet/sing-geoip). It uses `Country.mmdb` from [Iran V2Ray Rules](https://github.com/Chocolate4U/Iran-v2ray-rules) to generate `geoip.db`.  
-`geosite.db` is generated using source code from my [fork](https://github.com/Chocolate4U/sing-geosite) of [sing-geosite](https://github.com/SagerNet/sing-geosite). It uses `geosite.dat` from [Iran V2Ray Rules](https://github.com/Chocolate4U/Iran-v2ray-rules) to generate `geosite.db`.  
+`geoip.db`,`geoip-lite.db` are generated using source code from my [fork](https://github.com/Chocolate4U/sing-geoip) of [sing-geoip](https://github.com/SagerNet/sing-geoip). It uses `Country.mmdb`,`Country-lite.mmdb` from [Iran V2Ray Rules](https://github.com/Chocolate4U/Iran-v2ray-rules) to generate `geoip.db`,`geoip-lite.db`.  
+`geosite.db`,`geosite-lite.db` are generated using source code from my [fork](https://github.com/Chocolate4U/sing-geosite) of [sing-geosite](https://github.com/SagerNet/sing-geosite). It uses `geosite.dat`,`geosite-lite.dat` from [Iran V2Ray Rules](https://github.com/Chocolate4U/Iran-v2ray-rules) to generate `geosite.db`,`geosite-lite.db`.  
 
 # :handshake: Contribution
 All contributions are welcome and appreciated. You can contribute to this project in 2 ways:  
