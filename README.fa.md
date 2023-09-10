@@ -125,12 +125,18 @@
 
 # :arrow_down: نحوه دانلود
 ## <picture><source media="(prefers-color-scheme: dark)" srcset="https://cdn.simpleicons.org/github/white"><source media="(prefers-color-scheme: light)" srcset="https://cdn.simpleicons.org/github/dark"><img height="32" width="32" alt="github logo in dark and light mode." src="https://cdn.simpleicons.org/github/dark"></picture> از گیت هاب
-[https://github.com/chocolate4u/Iran-sing-box-rules/releases/latest/download/geoip.db](https://github.com/chocolate4u/Iran-sing-box-rules/releases/latest/download/geoip.db)  
-[https://github.com/chocolate4u/Iran-sing-box-rules/releases/latest/download/geosite.db](https://github.com/chocolate4u/Iran-sing-box-rules/releases/latest/download/geosite.db)  
+`GeoIP` [https://github.com/chocolate4u/Iran-sing-box-rules/releases/latest/download/geoip.db](https://github.com/chocolate4u/Iran-sing-box-rules/releases/latest/download/geoip.db)  
+`GeoSite` [https://github.com/chocolate4u/Iran-sing-box-rules/releases/latest/download/geosite.db](https://github.com/chocolate4u/Iran-sing-box-rules/releases/latest/download/geosite.db)  
+
+`GeoIP-Lite` [https://github.com/chocolate4u/Iran-sing-box-rules/releases/latest/download/geoip-lite.db](https://github.com/chocolate4u/Iran-sing-box-rules/releases/latest/download/geoip-lite.db)  
+`GeoSite-Lite` [https://github.com/chocolate4u/Iran-sing-box-rules/releases/latest/download/geosite-lite.db](https://github.com/chocolate4u/Iran-sing-box-rules/releases/latest/download/geosite-lite.db)  
 
 ## <picture><source media="(prefers-color-scheme: dark)" srcset="https://cdn.simpleicons.org/jsdelivr/white"><source media="(prefers-color-scheme: light)" srcset="https://cdn.simpleicons.org/jsdelivr/dark"><img height="32" width="32" alt="github logo in dark and light mode." src="https://cdn.simpleicons.org/jsdelivr/dark"></picture> از سرویس توزیع محتوای jsDelivr
-[https://cdn.jsdelivr.net/gh/chocolate4u/Iran-sing-box-rules@release/geoip.db](https://cdn.jsdelivr.net/gh/chocolate4u/Iran-sing-box-rules@release/geoip.db)  
-[https://cdn.jsdelivr.net/gh/chocolate4u/Iran-sing-box-rules@release/geosite.db](https://cdn.jsdelivr.net/gh/chocolate4u/Iran-sing-box-rules@release/geosite.db)  
+`GeoIP` [https://cdn.jsdelivr.net/gh/chocolate4u/Iran-sing-box-rules@release/geoip.db](https://cdn.jsdelivr.net/gh/chocolate4u/Iran-sing-box-rules@release/geoip.db)  
+`GeoSite` [https://cdn.jsdelivr.net/gh/chocolate4u/Iran-sing-box-rules@release/geosite.db](https://cdn.jsdelivr.net/gh/chocolate4u/Iran-sing-box-rules@release/geosite.db)  
+
+`GeoIP-Lite` [https://cdn.jsdelivr.net/gh/chocolate4u/Iran-sing-box-rules@release/geoip-lite.db](https://cdn.jsdelivr.net/gh/chocolate4u/Iran-sing-box-rules@release/geoip-lite.db)  
+`GeoSite-Lite` [https://cdn.jsdelivr.net/gh/chocolate4u/Iran-sing-box-rules@release/geosite-lite.db](https://cdn.jsdelivr.net/gh/chocolate4u/Iran-sing-box-rules@release/geosite-lite.db)  
 
 # :computer: نحوه استفاده
 ## هسته sing-box
@@ -187,8 +193,8 @@
 ```
 
 # :information_desk_person: این ها چطوری ساخته شدن؟
-فایل `geoip.db` با استفاده از سورس کد موجود در [فورک](https://github.com/Chocolate4U/sing-geoip) من از [sing-geoip](https://github.com/SagerNet/sing-geoip) ساخته شده. از فایل `Country.mmdb` موجود در مخزن [Iran V2Ray Rules](https://github.com/Chocolate4U/Iran-v2ray-rules) برای ساخت این فایل استفاده می شود.
-فایل `geosite.db` با استفاده از سورس کد موجود در [فورک](https://github.com/Chocolate4U/sing-geosite) من از [sing-geosite](https://github.com/SagerNet/sing-geosite) ساخته شده. از فایل `geosite.dat` موجود در مخزن [Iran V2Ray Rules](https://github.com/Chocolate4U/Iran-v2ray-rules) برای ساخت این فایل استفاده می شود.
+فایل های `geoip.db`,`geoip-lite.db` با استفاده از سورس کد موجود در [فورک](https://github.com/Chocolate4U/sing-geoip) من از [sing-geoip](https://github.com/SagerNet/sing-geoip) ساخته شدن. از فایل `Country.mmdb`,`Country-lite.mmdb` موجود در مخزن [Iran V2Ray Rules](https://github.com/Chocolate4U/Iran-v2ray-rules) برای ساخت این فایل ها استفاده می شود.  
+فایل های `geosite.db`,`geosite-lite.db` با استفاده از سورس کد موجود در [فورک](https://github.com/Chocolate4U/sing-geosite) من از [sing-geosite](https://github.com/SagerNet/sing-geosite) ساخته شده. از فایل `geosite.dat`,`geosite-lite.dat` موجود در مخزن [Iran V2Ray Rules](https://github.com/Chocolate4U/Iran-v2ray-rules) برای ساخت این فایل ها استفاده می شود.
 
 # :handshake: مشارکت
 هرگونه مشارکتی در این مخزن مورد استقبال قرار میگیرد. شما به دو روش میتوانید در این مخزن مشارکت داشته باشید:  
