@@ -23,7 +23,7 @@ This is an Enhanced and All-in-One set of geo-location routing files optimized f
 
 ## GeoIP
 - `geoip:ir`  
-  Contains Iran IP addresses from Maxmind database and IP addresses of Iranian messengers such as `eitaa`, `rubika`, etc.
+  Contains Iran IP addresses from Maxmind and IP2Location databases and IP addresses of Iranian messengers such as `eitaa`, `rubika`, etc.
 
 - `geoip:private`  
   Contains a list of local (LAN) IP addresses.
@@ -36,6 +36,9 @@ This is an Enhanced and All-in-One set of geo-location routing files optimized f
 
 - `geoip:iranserver`  
   Contains IP addresses of IranServer.com CDN.
+
+- `geoip:parspack`  
+  Contains IP addresses of ParsPack.com CDN.
 
 - `geoip:cloudflare`  
   Contains IP addresses of ClouFlare CDN.
@@ -84,7 +87,7 @@ This is an Enhanced and All-in-One set of geo-location routing files optimized f
 
 ## GeoIP-Lite
 - `geoip:ir`  
-  Contains Iran IP addresses from Maxmind database and IP addresses of Iranian messengers such as `eitaa`, `rubika`, etc.
+  Contains Iran IP addresses from Maxmind and IP2Location databases and IP addresses of Iranian messengers such as `eitaa`, `rubika`, etc.
 
 - `geoip:private`  
   Contains a list of local (LAN) IP addresses.
@@ -182,12 +185,15 @@ Add the following to your sing-box client configuration:
       "geoip": [
         "ir",
         "private",
-        "arvancloud"
+        "arvancloud",
+        "derakcloud",
+        "iranserver",
+        "parspack"
       ],
       "outbound": "direct"
     }
   ]
-},
+}
 ```
 
 # :information_desk_person: How is this made?  
