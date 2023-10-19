@@ -10,13 +10,26 @@ jobs:
     runs-on: ubuntu-latest
     
     steps:
-      - uses: actions/checkout@v4
+      - name: Checkout Iran-sing-box-rules repository
+        uses: actions/checkout@v4
+      
+      - name: Checkout sing-geoip repository
+        uses: actions/checkout@v4
+        with:
+          repository: Chocolate4U/sing-geoip
+          path: sing-geoip
+
+      - name: Checkout sing-geosite repository
+        uses: actions/checkout@v4
+        with:
+          repository: Chocolate4U/sing-geosite
+          path: sing-geosite
 
       - name: Setup Go
         uses: actions/setup-go@v4
         with:
           go-version: '1.21'
-          cache: false
+          cache-dependency-path: sing-geoip/go.sum
 
       - name: Set ENV variables
         run: |
@@ -29,14 +42,12 @@ jobs:
 
       - name: Generate geoip.db file
         run: |
-          git clone https://github.com/Chocolate4U/sing-geoip.git
           cd sing-geoip
           go run -v .
           mv geoip*.db ../release
 
       - name: Generate geosite.db file
         run: |
-          git clone https://github.com/Chocolate4U/sing-geosite.git
           cd sing-geosite
           go run -v .
           mv geosite*.db ../release
