@@ -14,7 +14,7 @@
 [فارسی](README.fa.md)  
 
 # :writing_hand: Introduction
-This is an Enhanced and All-in-One set of geo-location routing files optimized for Iranian users to use in sing-box and all it's compatible clients.
+This is an Enhanced and All-in-One set of geo-location routing files optimized for Iranian users to use in sing-box and all its compatible clients.
 
 :bulb: For V2Ray geolocation rules please refer to [Iran V2Ray Rules](https://github.com/Chocolate4U/Iran-v2ray-rules)  
 :bulb: For Clash geolocation rules please refer to [Iran Clash Rules](https://github.com/Chocolate4U/Iran-clash-rules)
@@ -41,43 +41,43 @@ This is an Enhanced and All-in-One set of geo-location routing files optimized f
   Contains IP addresses of ParsPack.com CDN.
 
 - `geoip:cloudflare`  
-  Contains IP addresses of ClouFlare CDN.
+  Contains IP addresses of Cloudflare CDN.
 
 - `geoip:google`  
-  Contains IP addresses of Google, GoogleCloud and GoogleBot.
+  Contains the IP addresses of Google, GoogleCloud and GoogleBot.
 
 - `geoip:amazon`  
-  Contains IP addresses of Amazon and Amazon Web Services (AWS).
+  Contains the IP addresses of Amazon and Amazon Web Services (AWS).
 
 - `geoip:microsoft`  
   Contains IP addresses of Microsoft and Azure Platform.
 
 - `geoip:bing`  
-  Contains IP addresses of Bing and Bingbot.
+  Contains the IP addresses of Bing and Bingbot.
 
 - `geoip:github`  
-  Contains IP addresses of GitHub.
+  Contains the IP addresses of GitHub.
 
 - `geoip:facebook`  
-  Contains IP addresses of Meta ecosystem, including Facebook, Instagram and WhatsApp.
+  Contains the IP addresses of the Meta ecosystem, including Facebook, Instagram and WhatsApp.
 
 - `geoip:twitter`  
-  Contains IP addresses of Twitter (now called X!).
+  Contains the IP addresses of Twitter (now called X!).
 
 - `geoip:telegram`  
-  Contains IP addresses of Telegram Messenger.
+  Contains the IP addresses of Telegram Messenger.
 
 - `geoip:oracle`  
-  Contains IP addresses of Oracle Cloud.
+  Contains the IP addresses of Oracle Cloud.
 
 - `geoip:digitalocean`  
-  Contains IP addresses of DigitalOcean related services.
+  Contains the IP addresses of DigitalOcean-related services.
 
 - `geoip:linode`  
-  Contains IP addresses of Linode related services.
+  Contains the IP addresses of Linode-related services.
 
 - `geoip:openai`  
-  Contains IP addresses of OpenAI and ChatGPT.
+  Contains the IP addresses of OpenAI and ChatGPT.
 
 - `geoip:phishing`  
   Contains Phishing IP addresses.
@@ -100,7 +100,7 @@ This is an Enhanced and All-in-One set of geo-location routing files optimized f
   Contains a list of Persian advertisement and tracking domains.
 
 - `geosite:category-ads-all`  
-  Contains a curated list of Persian and Foreign advertisement and tracking domains based on multiple sources. It is optimized to has as low as possible false positives while also retain small size and efficiency.
+  Contains a curated list of Persian and Foreign advertisement and tracking domains based on multiple sources. It is optimized to have as low as possible false positives while also retaining a small size and efficiency.
 
 - `geosite:malware`  
   Contains a list of active malware domains.
@@ -202,12 +202,12 @@ Add the following to your sing-box client configuration:
 
 # :handshake: Contribution
 All contributions are welcome and appreciated. You can contribute to this project in 2 ways:  
-1. Contribute to it's upstream sources  
+1. Contribute to its upstream sources  
    Do you know a Domain that should be bypassed? report it to [Iran Hosted Domains](https://github.com/bootmortis/iran-hosted-domains)  
-   Do you know a persian advertisement domain that should be blocked or a false positive? report it to [PersianBlocker](https://github.com/MasterKia/PersianBlocker)  
-   Do you know... OK you got the idea!  
+   Do you know a Persian advertisement domain that should be blocked or a false positive? report it to [PersianBlocker](https://github.com/MasterKia/PersianBlocker)  
+   Do you know... OK, you got the idea!  
 2. Contribute directly to this project  
-   Report issues, open pull requests, suggest new sources or categories or any idea in general to make this repository more useful for everyone.  
+   Report issues, open pull requests, suggest new sources or categories or any idea, in general, to make this repository more useful for everyone.  
 
 :raising_hand_man: Also one more thing, if this repository was useful to you, kindly leave a :star: up there so this project can be seen by more people.
 
@@ -249,9 +249,9 @@ All rights are reserved for All upstream sources used in this project according 
 | Unified Hosts               | StevenBlack          | [Home Page](https://github.com/StevenBlack/hosts)              | [MIT](https://github.com/StevenBlack/hosts/blob/master/license.txt)             | social, nsfw |
 
 # :warning: Disclaimer
-This repository is not affiliated, associated, authorized, endorsed by, or in any way officially connected to any of the aforementioned resources, websites, services, or any entity which this may concern, in any way.  
-The data in this repository is gathered from publicly available resources and is provided as-is, intended for informational purposes only with no guarantee of accuracy, liability or availability and We are not responsible for any harm or damage that may arise from using the data in this repository. Please do your research before using any data from this repository.
+This repository is not affiliated, associated, authorized, endorsed by, or in any way officially connected to any of the aforementioned resources, websites, services, or any entity to which this may concern, in any way.  
+The data in this repository is gathered from publicly available resources and is provided as-is, intended for informational purposes only with no guarantee of accuracy, liability or availability We are not responsible for any harm or damage that may arise from using the data in this repository. Please do your research before using any data from this repository.
 
 # :pray: Special Thanks
-- All maintainers that mentioned in this project.
+- All maintainers that are mentioned in this project.
 - [Project S](https://github.com/SagerNet)
