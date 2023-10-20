@@ -29,19 +29,19 @@ This is an Enhanced and All-in-One set of geo-location routing files optimized f
   Contains a list of local (LAN) IP addresses.
 
 - `geoip:arvancloud`  
-  Contains IP addresses of ArvanCloud.ir CDN.
+  Contains the IP addresses of ArvanCloud.ir CDN.
 
 - `geoip:derakcloud`  
-  Contains IP addresses of Derak.cloud CDN.
+  Contains the IP addresses of Derak.cloud CDN.
 
 - `geoip:iranserver`  
-  Contains IP addresses of IranServer.com CDN.
+  Contains the IP addresses of IranServer.com CDN.
 
 - `geoip:parspack`  
-  Contains IP addresses of ParsPack.com CDN.
+  Contains the IP addresses of ParsPack.com CDN.
 
 - `geoip:cloudflare`  
-  Contains IP addresses of Cloudflare CDN.
+  Contains the IP addresses of Cloudflare CDN.
 
 - `geoip:google`  
   Contains the IP addresses of Google, GoogleCloud and GoogleBot.
@@ -50,7 +50,7 @@ This is an Enhanced and All-in-One set of geo-location routing files optimized f
   Contains the IP addresses of Amazon and Amazon Web Services (AWS).
 
 - `geoip:microsoft`  
-  Contains IP addresses of Microsoft and Azure Platform.
+  Contains the IP addresses of Microsoft and Azure Platform.
 
 - `geoip:bing`  
   Contains the IP addresses of Bing and Bingbot.
