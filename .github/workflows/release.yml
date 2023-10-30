@@ -2,6 +2,11 @@ name: Generate sing-box routing rules
 
 on:
   workflow_dispatch:
+    inputs:
+      PRE_RELEASE:
+        description: "Set as pre-release"
+        required: false
+        default: "false"
   schedule:
     - cron: "15 1 * * *"
 
@@ -44,13 +49,13 @@ jobs:
         run: |
           cd sing-geoip
           go run -v .
-          mv geoip*.db ../release
+          mv *.db ../release
 
       - name: Generate geosite.db file
         run: |
           cd sing-geosite
           go run -v .
-          mv geosite*.db ../release
+          mv *.db ../release
 
       - name: Generate sha256sum
         run: |
@@ -58,6 +63,8 @@ jobs:
           sha256sum release/geoip-lite.db > release/geoip-lite.db.sha256sum
           sha256sum release/geosite.db > release/geosite.db.sha256sum
           sha256sum release/geosite-lite.db > release/geosite-lite.db.sha256sum
+          sha256sum release/security-ip.db > release/security-ip.db.sha256sum
+          sha256sum release/security.db > release/security.db.sha256sum
           
       - name: Generate Release Notes
         run: | 
@@ -65,6 +72,7 @@ jobs:
           echo "* Based on [Iran-v2ray-rules](https://github.com/Chocolate4U/Iran-v2ray-rules)" >> RELEASE_NOTES
 
       - name: Push assets to release branch
+        if: ${{ inputs.PRE_RELEASE == 'false' }}
         run: |
           cd release || exit 1
           git init
@@ -77,6 +85,7 @@ jobs:
           git push -f origin release
 
       - name: Purge jsDelivr CDN cache
+        if: ${{ inputs.PRE_RELEASE == 'false' }}
         run: |
           cd release || exit 1
           for file in $(ls); do
@@ -90,12 +99,13 @@ jobs:
           tag_name: ${{ env.TAG_NAME }}
           body_path: RELEASE_NOTES
           draft: false
-          prerelease: false
+          prerelease: ${{ inputs.PRE_RELEASE }}
           files: ./release/*
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
       
       - name: Clean older releases
+        if: ${{ inputs.PRE_RELEASE == 'false' }}
         uses: dev-drprasad/delete-older-releases@v0.3.2
         with:
           keep_latest: 7
