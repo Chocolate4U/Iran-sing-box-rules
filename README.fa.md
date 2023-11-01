@@ -20,111 +20,147 @@
 # :page_with_curl: دسته بندی ها
 
 ## GeoIP
-- `geoip:ir`  
+
+- `geoip:ir`
   <p align="right">دربر گیرنده IP های ایران استخراج شده از دیتابیس Maxmind و IP2Location به علاوه IP های پیامرسان های ایرانی از جمله "ایتا"، "روبیکا" و غیره.</p>
 
-- `geoip:private`  
-  <p align="right">دربر گیرنده IP های شبکه محلی (LAN).</p>
+- `geoip:cn`
+  <p align="right">دربر گیرنده IP های چین گرفته شده از مخزن Loyalsoldier/v2ray-rulesdat.</p>
 
-- `geoip:arvancloud`  
+- `geoip:ru`
+  <p align="right">دربر گیرنده IP های روسیه استخراج شده از دیتابس MaxMind.</p>
+
+- `geoip:us`
+  <p align="right"></p>
+
+- `geoip:private`
+  <p align="right">دربر گیرنده IP های ایالات متحده استخراج شده از دیتابس MaxMind.</p>
+
+- `geoip:arvancloud`
   <p align="right">دربر گیرنده IP های سرویس توزیع محتوای ابرآروان.</p>
 
-- `geoip:derakcloud`  
+- `geoip:derakcloud`
   <p align="right">دربر گیرنده IP های سرویس توزیع محتوای ابردراک.</p>
 
-- `geoip:iranserver`  
+- `geoip:iranserver`
   <p align="right">دربر گیرنده IP های سرویس توزیع محتوای ایران سرور.</p>
 
-- `geoip:parspack`  
+- `geoip:parspack`
   <p align="right">دربر گیرنده IP های سرویس توزیع محتوای پارس پک.</p>
 
-- `geoip:cloudflare`  
+- `geoip:cloudflare`
   <p align="right">دربرگیرنده IP های سرویس توزیع محتوای کلودفلر.</p>
 
-- `geoip:google`  
+- `geoip:google`
   <p align="right">دربر گیرنده IP های گوگل، گوگل کلود و گوگل بات.</p>
 
-- `geoip:amazon`  
+- `geoip:amazon`
   <p align="right">در برگیرنده IP های آمازون و سرویس ابری آمازون(AWS).</p>
 
-- `geoip:microsoft`  
+- `geoip:microsoft`
   <p align="right">دربر گیرنده IP های مایکروسافت و سرویس ابری آژور.</p>
 
-- `geoip:bing`  
+- `geoip:bing`
   <p align="right">دربر گیرنده IP های موتور جستجوی بینگ.</p>
 
-- `geoip:github`  
+- `geoip:github`
   <p align="right">دربر گیرنده IP های گیت هاب.</p>
 
-- `geoip:facebook`  
+- `geoip:facebook`
   <p align="right">دربر گیرنده IP های اکوسیستم متا، از جمله فیسبوک، اینستاگرام و واتس اپ.</p>
 
-- `geoip:twitter`  
+- `geoip:twitter`
   <p align="right">دربر گیرنده IP های توییتر (یا به عبارتی X!).</p>
 
-- `geoip:telegram`  
+- `geoip:telegram`
   <p align="right">دربر گیرنده IP های تلگرام.</p>
 
-- `geoip:oracle`  
+- `geoip:oracle`
   <p align="right">دربر گیرنده IP های سرویس ابری اوراکل.</p>
 
-- `geoip:digitalocean`  
+- `geoip:digitalocean`
   <p align="right">دربر گیرنده IP سرویس های ابری دیجیتال اوشن.</p>
 
-- `geoip:linode`  
+- `geoip:linode`
   <p align="right">دربر گیرنده IP سرویس ابری لینود.</p>
 
-- `geoip:openai`  
+- `geoip:openai`
   <p align="right">دربر گیرنده IP های OpenAI و ChatGPT.</p>
 
-- `geoip:phishing`  
+- `geoip:phishing`
   <p align="right">دربر گینده IP های فیشینگ.</p>
 
-- `geoip:malware`  
+- `geoip:malware`
   <p align="right">دربر گیرنده IP های بدافزار.</p>
 
 ## GeoIP-Lite
-- `geoip:ir`  
+
+- `geoip:ir`
   <p align="right">دربر گیرنده IP های ایران استخراج شده از دیتابیس Maxmind و IP2Location به علاوه IP های پیامرسان های ایرانی از جمله "ایتا"، "روبیکا" و غیره.</p>
 
-- `geoip:private`  
+- `geoip:private`
   <p align="right">دربر گیرنده IP های شبکه محلی (LAN).</p>
 
+## Security-IP
+
+- `geoip:phishing`
+  <p align="right">دربر گینده IP های فیشینگ.</p>
+
+- `geoip:malware`
+  <p align="right">دربر گیرنده IP های بدافزار.</p>
+
 ## GeoSite
-- `geosite:ir`  
+- کلیه دسته بندی ها موجود در مخزن [domain-list-community](https://github.com/v2fly/domain-list-community) پشتبانی می شوند، به علاوه موارد زیر:
+
+- `geosite:ir`
   <p align="right">دربر گیرنده وبسایت های ایرانی به غیر از دامنه های "ir." و قوانینی جهت بایپس کردن کلیه دامنه های "ir.".</p>
 
-- `geosite:ads`  
+- `geosite:ads`
   <p align="right">دربر گیرنده لیستی از دامنه های تبلیغاتی ایرانی.</p>
 
-- `geosite:category-ads-all`  
+- `geosite:category-ads-all`
   <p align="right">دربر گیرنده لیستی سفارشی شده از دامنه های تبلیغاتی ایرانی و خارجی. این لیست به گونه ای بهینه شده که تا حد امکان خالی از اشتباه باشد در حالی که سبک بودن و موثر بودن خود را نیز حفظ کند.</p>
 
-- `geosite:malware`  
+- `geosite:malware`
   <p align="right">دربر گیرنده لیستی از دامنه های حاوی بدافزار.</p>
 
-- `geosite:phishing`  
+- `geosite:phishing`
   <p align="right">دربر گیرنده لیستی از دامنه های تقلبی و فیشینگ.</p>
 
-- `geosite:cryptominers`  
+- `geosite:cryptominers`
   <p align="right">دربر گیرنده لیستی از استخراج کننده های رمزارز که در پس زمینه مرورگر شروع به استخراج کرده و بر کارایی سیستم کاربر تاثیر منفی می گزارند.</p>
 
-- `geosite:social`  
+- `geosite:social`
   <p align="right">دربر گیرنده لیستی از دامنه های شبکه های اجتماعی از جمله "Facebook", "Instagram", "Whatsapp", "Twitter", "LinkedIn", "MySpace", "Pinterest", "Tumblr", "Reddit", "TikTok", "clubhouse".</p>
 
 - `geosite:nsfw`
   <p align="right">دربر گیرنده لیستی از دامنه های محتوای بزرگسال و قمار.</p>
 
 ## GeoSite-Lite
-- `geosite:ir`  
+
+- `geosite:ir`
 <p align="right">
   دربر گیرنده وبسایت های ایرانی فعال به غیر از دامنه های "ir." و قوانینی جهت بایپس کردن کلیه دامنه های "ir.".<br>
   همه دامنه های ایرانی در لیست معمولی هر 24 ساعت یکبار بررسی شده و پس از حذف دامنه های غیرفعال به این لیست راه میابند.<br>
   این تست ممکن است زیاد دقیق نباشد، به همین دلیل پیشنهاد میکنم هر روز و یا به طور مرتب این لیست را بروزرسانی کنید.
 </p>
-  
-- `geosite:ads`  
+
+- `geosite:ads`
   <p align="right">دربر گیرنده لیستی از دامنه های تبلیغاتی ایرانی.</p>
+
+## Security
+
+- `geosite:category-ads-all`
+  <p align="right">دربر گیرنده لیستی سفارشی شده از دامنه های تبلیغاتی ایرانی و خارجی. این لیست به گونه ای بهینه شده که تا حد امکان خالی از اشتباه باشد در حالی که سبک بودن و موثر بودن خود را نیز حفظ کند.</p>
+
+- `geosite:malware`
+  <p align="right">دربر گیرنده لیستی از دامنه های حاوی بدافزار.</p>
+
+- `geosite:phishing`
+  <p align="right">دربر گیرنده لیستی از دامنه های تقلبی و فیشینگ.</p>
+
+- `geosite:cryptominers`
+  <p align="right">دربر گیرنده لیستی از استخراج کننده های رمزارز که در پس زمینه مرورگر شروع به استخراج کرده و بر کارایی سیستم کاربر تاثیر منفی می گزارند.</p>
 
 # :arrow_down: نحوه دانلود
 ## <picture><source media="(prefers-color-scheme: dark)" srcset="https://cdn.simpleicons.org/github/white"><source media="(prefers-color-scheme: light)" srcset="https://cdn.simpleicons.org/github/dark"><img height="32" width="32" alt="github logo in dark and light mode." src="https://cdn.simpleicons.org/github/dark"></picture> از گیت هاب
@@ -134,12 +170,18 @@
 `GeoIP-Lite` [https://github.com/chocolate4u/Iran-sing-box-rules/releases/latest/download/geoip-lite.db](https://github.com/chocolate4u/Iran-sing-box-rules/releases/latest/download/geoip-lite.db)  
 `GeoSite-Lite` [https://github.com/chocolate4u/Iran-sing-box-rules/releases/latest/download/geosite-lite.db](https://github.com/chocolate4u/Iran-sing-box-rules/releases/latest/download/geosite-lite.db)  
 
+`Security-IP` [https://github.com/chocolate4u/Iran-sing-box-rules/releases/latest/download/security-ip.db](https://github.com/chocolate4u/Iran-sing-box-rules/releases/latest/download/security-ip.db)  
+`Security` [https://github.com/chocolate4u/Iran-sing-box-rules/releases/latest/download/security.db](https://github.com/chocolate4u/Iran-sing-box-rules/releases/latest/download/security.db)
+
 ## <picture><source media="(prefers-color-scheme: dark)" srcset="https://cdn.simpleicons.org/jsdelivr/white"><source media="(prefers-color-scheme: light)" srcset="https://cdn.simpleicons.org/jsdelivr/dark"><img height="32" width="32" alt="github logo in dark and light mode." src="https://cdn.simpleicons.org/jsdelivr/dark"></picture> از سرویس توزیع محتوای jsDelivr
 `GeoIP` [https://cdn.jsdelivr.net/gh/chocolate4u/Iran-sing-box-rules@release/geoip.db](https://cdn.jsdelivr.net/gh/chocolate4u/Iran-sing-box-rules@release/geoip.db)  
 `GeoSite` [https://cdn.jsdelivr.net/gh/chocolate4u/Iran-sing-box-rules@release/geosite.db](https://cdn.jsdelivr.net/gh/chocolate4u/Iran-sing-box-rules@release/geosite.db)  
 
 `GeoIP-Lite` [https://cdn.jsdelivr.net/gh/chocolate4u/Iran-sing-box-rules@release/geoip-lite.db](https://cdn.jsdelivr.net/gh/chocolate4u/Iran-sing-box-rules@release/geoip-lite.db)  
 `GeoSite-Lite` [https://cdn.jsdelivr.net/gh/chocolate4u/Iran-sing-box-rules@release/geosite-lite.db](https://cdn.jsdelivr.net/gh/chocolate4u/Iran-sing-box-rules@release/geosite-lite.db)  
+
+`Security-IP` [https://cdn.jsdelivr.net/gh/chocolate4u/Iran-sing-box-rules@release/security-ip.db](https://cdn.jsdelivr.net/gh/chocolate4u/Iran-sing-box-rules@release/security-ip.db)  
+`Security` [https://cdn.jsdelivr.net/gh/chocolate4u/Iran-sing-box-rules@release/security.db](https://cdn.jsdelivr.net/gh/chocolate4u/Iran-sing-box-rules@release/security.db)
 
 # :computer: نحوه استفاده
 ## هسته sing-box
@@ -221,11 +263,13 @@
 
 # :package: منابع
 ## GeoIP
+
 | Source                 | Maintainer           | Home Page                                                                                 | License                                                                              | Category          |
 | ---------------------- | -------------------- | ----------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------ | ----------------- |
-| GeoLite2               | MaxMind              | [Home Page](https://dev.maxmind.com/geoip/geolite2-free-geolocation-data)                 | [CC BY-SA 4.0](https://dev.maxmind.com/geoip/geolite2-free-geolocation-data#license) | ir                |
+| GeoLite2               | MaxMind              | [Home Page](https://dev.maxmind.com/geoip/geolite2-free-geolocation-data)                 | [CC BY-SA 4.0](https://dev.maxmind.com/geoip/geolite2-free-geolocation-data#license) | ir, ru, us        |
 | IP2Location LITE       | IP2Location          | [Home Page](https://lite.ip2location.com/ip2location-lite)                                | [CC BY-SA 4.0](https://lite.ip2location.com/terms-of-use)                            | ir                |
 | ITO GOV                | ITO GOV              | [Home Page](https://eservices.ito.gov.ir/Page/IPListMessenger)                            | N/A                                                                                  | ir(messenger IPs) |
+| V2ray-rules-dat        | Loyalsoldier         | [Home Page](https://github.com/Loyalsoldier/v2ray-rules-dat)                              | [GPL-3.0](https://github.com/Loyalsoldier/v2ray-rules-dat/blob/master/LICENSE)       | cn                |
 | Arvan Cloud            | Arvan Cloud          | [Home Page](https://www.arvancloud.ir/en/dev/ips)                                         | All rights reserved                                                                  | arvancloud        |
 | Derak Cloud            | Derak Cloud          | [Home Page](https://derak.cloud/لیست-بازه-های-ip)                                         | All rights reserved                                                                  | derakcloud        |
 | IranServer             | IranServer           | [Home Page](https://docs.iranserver.com/irserver-cloud/cdn/allow-iranserver-ip-addresses) | All rights reserved                                                                  | iranserver        |
@@ -237,18 +281,20 @@
 | IPRanges               | lord-alfred          | [Home Page](https://github.com/lord-alfred/ipranges)                                      | [CC0 1.0](https://github.com/lord-alfred/ipranges/blob/main/LICENSE)                 | everything else   |
 
 ## GeoSite
-| Source                      | Maintainer           | Home Page                                                      | License                                                                         | Category     |
-| --------------------------- | -------------------- | -------------------------------------------------------------- | ------------------------------------------------------------------------------- | ------------ |
-| Iran Hosted Domains         | bootmortis           | [Home Page](https://github.com/bootmortis/iran-hosted-domains) | [MIT](https://github.com/bootmortis/iran-hosted-domains/blob/main/LICENSE)      | ir           |
-| PersianBlocker              | MasterKia            | [Home Page](https://github.com/MasterKia/PersianBlocker)       | [AGPL-3.0](https://github.com/MasterKia/PersianBlocker/blob/main/LICENSE)       | ads          |
-| DNS Blocklists              | Hagezi               | [Home Page](https://github.com/hagezi/dns-blocklists)          | All rights reserved                                                             | ads          |
-| Ad and tracking server list | Peter Lowe           | [Home Page](https://pgl.yoyo.org/adservers)                    | [McRae GPL](https://pgl.yoyo.org/license)                                       | ads          |
-| GoodbyeAds                  | jerryn70             | [Home Page](https://github.com/jerryn70/GoodbyeAds)            | [MIT](https://github.com/jerryn70/GoodbyeAds/blob/master/LICENSE)               | ads          |
-| AdGuard DNS filter          | Adguard Team         | [Home Page](https://github.com/AdguardTeam/AdGuardSDNSFilter)  | [GPL-3.0](https://github.com/AdguardTeam/AdGuardSDNSFilter/blob/master/LICENSE) | ads          |
-| URLhaus                     | abuse.ch             | [Home Page](https://urlhaus.abuse.ch)                          | [CC0](https://urlhaus.abuse.ch/api/#tos)                                        | malware      |
-| Phishing URL Blocklist      | malware-filter Group | [Home Page](https://gitlab.com/malware-filter/phishing-filter) | [MIT](https://gitlab.com/malware-filter/phishing-filter/-/blob/main/LICENSE)    | phishing     |
-| NoCoin adblock list         | hoshsadiq            | [Home Page](https://github.com/hoshsadiq/adblock-nocoin-list)  | [MIT](https://github.com/hoshsadiq/adblock-nocoin-list/blob/master/LICENSE)     | cryptominers |
-| Unified Hosts               | StevenBlack          | [Home Page](https://github.com/StevenBlack/hosts)              | [MIT](https://github.com/StevenBlack/hosts/blob/master/license.txt)             | social, nsfw |
+
+| Source                      | Maintainer            | Home Page                                                      | License                                                                         | Category        |
+| --------------------------- | --------------------- | -------------------------------------------------------------- | ------------------------------------------------------------------------------- | --------------- |
+| Iran Hosted Domains         | bootmortis            | [Home Page](https://github.com/bootmortis/iran-hosted-domains) | [MIT](https://github.com/bootmortis/iran-hosted-domains/blob/main/LICENSE)      | ir              |
+| PersianBlocker              | MasterKia             | [Home Page](https://github.com/MasterKia/PersianBlocker)       | [AGPL-3.0](https://github.com/MasterKia/PersianBlocker/blob/main/LICENSE)       | ads             |
+| DNS Blocklists              | Hagezi                | [Home Page](https://github.com/hagezi/dns-blocklists)          | All rights reserved                                                             | ads             |
+| Ad and tracking server list | Peter Lowe            | [Home Page](https://pgl.yoyo.org/adservers)                    | [McRae GPL](https://pgl.yoyo.org/license)                                       | ads             |
+| GoodbyeAds                  | jerryn70              | [Home Page](https://github.com/jerryn70/GoodbyeAds)            | [MIT](https://github.com/jerryn70/GoodbyeAds/blob/master/LICENSE)               | ads             |
+| AdGuard DNS filter          | Adguard Team          | [Home Page](https://github.com/AdguardTeam/AdGuardSDNSFilter)  | [GPL-3.0](https://github.com/AdguardTeam/AdGuardSDNSFilter/blob/master/LICENSE) | ads             |
+| URLhaus                     | abuse.ch              | [Home Page](https://urlhaus.abuse.ch)                          | [CC0](https://urlhaus.abuse.ch/api/#tos)                                        | malware         |
+| Phishing URL Blocklist      | malware-filter Group  | [Home Page](https://gitlab.com/malware-filter/phishing-filter) | [MIT](https://gitlab.com/malware-filter/phishing-filter/-/blob/main/LICENSE)    | phishing        |
+| NoCoin adblock list         | hoshsadiq             | [Home Page](https://github.com/hoshsadiq/adblock-nocoin-list)  | [MIT](https://github.com/hoshsadiq/adblock-nocoin-list/blob/master/LICENSE)     | cryptominers    |
+| Unified Hosts               | StevenBlack           | [Home Page](https://github.com/StevenBlack/hosts)              | [MIT](https://github.com/StevenBlack/hosts/blob/master/license.txt)             | social, nsfw    |
+| Domain list community       | Domain list community | [Home Page](https://github.com/v2fly/domain-list-community)    | [MIT](https://github.com/v2fly/domain-list-community/blob/master/LICENSE)       | everything else |
 
 # :warning: سلب مسئولیت
 این مخزن هیچگونه همکاری، ارتباط، مجوز، و یا به طور کلی به هیچ طریقی هیچ گونه ارتباطی به طور رسمی با هریک از منابع ذکر شده اعم از وبسایت ها، سرویس ها و یا هر چیزی که ممکن است به آن ارتباط داشته باشد، ندارد.  
