@@ -6,7 +6,8 @@ on:
       PRE_RELEASE:
         description: "Set as pre-release"
         required: false
-        default: "false"
+        type: boolean
+        default: false
   schedule:
     - cron: "15 1 * * *"
 
@@ -72,7 +73,7 @@ jobs:
           echo "* Based on [Iran-v2ray-rules](https://github.com/Chocolate4U/Iran-v2ray-rules)" >> RELEASE_NOTES
 
       - name: Push assets to release branch
-        if: ${{ inputs.PRE_RELEASE == 'false' }}
+        if: ${{ !inputs.PRE_RELEASE }}
         run: |
           cd release || exit 1
           git init
@@ -85,7 +86,7 @@ jobs:
           git push -f origin release
 
       - name: Purge jsDelivr CDN cache
-        if: ${{ inputs.PRE_RELEASE == 'false' }}
+        if: ${{ !inputs.PRE_RELEASE }}
         run: |
           cd release || exit 1
           for file in $(ls); do
@@ -105,7 +106,7 @@ jobs:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
       
       - name: Clean older releases
-        if: ${{ inputs.PRE_RELEASE == 'false' }}
+        if: ${{ !inputs.PRE_RELEASE }}
         uses: dev-drprasad/delete-older-releases@v0.3.2
         with:
           keep_latest: 7
