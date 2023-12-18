@@ -103,15 +103,18 @@ jobs:
           git remote add origin "https://${{ github.actor }}:${{ secrets.GITHUB_TOKEN }}@github.com/${{ github.repository }}"
           git push -f origin rule-set
 
-      - name: Purge jsDelivr CDN cache
+      - name: Purge jsDelivr CDN cache - release
         if: ${{ !inputs.PRE_RELEASE }}
         run: |
           cd release || exit 1
           for file in $(ls); do
             curl -i "https://purge.jsdelivr.net/gh/${{ github.repository }}@release/${file}"
           done
-
-          cd && cd rule-set || exit 1
+      
+      - name: Purge jsDelivr CDN cache - rule-set
+        if: ${{ !inputs.PRE_RELEASE }}
+        run: |
+          cd rule-set || exit 1
           for file in $(ls); do
             curl -i "https://purge.jsdelivr.net/gh/${{ github.repository }}@rule-set/${file}"
           done
