@@ -24,20 +24,88 @@ This is an Enhanced and All-in-One set of geo-location routing files optimized f
 
 ## GeoIP
 
+- Contains IP Addresses of all countries from Maxmind and IP2Location databases.
+
 - `geoip:ir`  
-  Contains Iran IP addresses from Maxmind and IP2Location databases and IP addresses of Iranian messengers such as `eitaa`, `rubika`, etc.
-
-- `geoip:cn`  
-  Contains China IP addresses from Loyalsoldier/v2ray-rules-dat repository.
-
-- `geoip:ru`  
-  Contains Russia IP addresses from Maxmind database.
-
-- `geoip:us`  
-  Contains United States IP addresses from Maxmind database.
+  Contains Iran IP addresses from Maxmind and IP2Location databases, IP addresses of Iranian messengers such as `eitaa`, `rubika`, etc. and IP addresses of `arvancloud`, `derakcloud`, `iranserver` and `parspack` CDNs.
 
 - `geoip:private`  
   Contains a list of local (LAN) IP addresses.
+
+- `geoip:arvancloud`  
+  Contains the IP addresses of ArvanCloud.ir CDN. :information_source: Integrated in `geoip:ir` and no longer needed to be written as a separate rule.
+
+- `geoip:derakcloud`  
+  Contains the IP addresses of Derak.cloud CDN. :information_source: Integrated in `geoip:ir` and no longer needed to be written as a separate rule.
+
+- `geoip:iranserver`  
+  Contains the IP addresses of IranServer.com CDN. :information_source: Integrated in `geoip:ir` and no longer needed to be written as a separate rule.
+
+- `geoip:parspack`  
+  Contains the IP addresses of ParsPack.com CDN. :information_source: Integrated in `geoip:ir` and no longer needed to be written as a separate rule.
+
+- `geoip:cloudflare`  
+  Contains the IP addresses of Cloudflare CDN.
+
+- `geoip:google`  
+  Contains the IP addresses of Google, GoogleCloud and GoogleBot.
+
+- `geoip:amazon`  
+  Contains the IP addresses of Amazon and Amazon Web Services (AWS).
+
+- `geoip:microsoft`  
+  Contains the IP addresses of Microsoft and Azure Platform.
+
+- `geoip:bing`  
+  Contains the IP addresses of Bing and Bingbot.
+
+- `geoip:github`  
+  Contains the IP addresses of GitHub.
+
+- `geoip:facebook`  
+  Contains the IP addresses of the Meta ecosystem, including Facebook, Instagram and WhatsApp.
+
+- `geoip:twitter`  
+  Contains the IP addresses of Twitter (now called X!).
+
+- `geoip:telegram`  
+  Contains the IP addresses of Telegram Messenger.
+
+- `geoip:oracle`  
+  Contains the IP addresses of Oracle Cloud.
+
+- `geoip:digitalocean`  
+  Contains the IP addresses of DigitalOcean-related services.
+
+- `geoip:linode`  
+  Contains the IP addresses of Linode-related services.
+
+- `geoip:openai`  
+  Contains the IP addresses of OpenAI and ChatGPT.
+
+- `geoip:phishing`  
+  Contains Phishing IP addresses.
+
+- `geoip:malware`  
+  Contains Active Malware IP addresses.
+
+## GeoIP-Lite
+
+- `geoip:ir`  
+  Contains Iran IP addresses from Maxmind and IP2Location databases, IP addresses of Iranian messengers such as `eitaa`, `rubika`, etc. and IP addresses of `arvancloud`, `derakcloud`, `iranserver` and `parspack` CDNs.
+
+- `geoip:private`  
+  Contains a list of local (LAN) IP addresses.
+
+## Security-IP
+
+- `geoip:phishing`  
+  Contains Phishing IP addresses.
+
+- `geoip:malware`  
+  Contains Active Malware IP addresses.
+
+## GeoIP-Services
 
 - `geoip:arvancloud`  
   Contains the IP addresses of ArvanCloud.ir CDN.
@@ -90,27 +158,21 @@ This is an Enhanced and All-in-One set of geo-location routing files optimized f
 - `geoip:openai`  
   Contains the IP addresses of OpenAI and ChatGPT.
 
-- `geoip:phishing`  
-  Contains Phishing IP addresses.
+## Country.mmdb
 
-- `geoip:malware`  
-  Contains Active Malware IP addresses.
+Same as `GeoIP` but in Maxmind's MMDB format.
 
-## GeoIP-Lite
+## Country-lite.mmdb
 
-- `geoip:ir`  
-  Contains Iran IP addresses from Maxmind and IP2Location databases and IP addresses of Iranian messengers such as `eitaa`, `rubika`, etc.
+Same as `GeoIP Lite` but in Maxmind's MMDB format.
 
-- `geoip:private`  
-  Contains a list of local (LAN) IP addresses.
+## Security-IP.mmdb
 
-## Security-IP
+Same as `Security-IP` but in Maxmind's MMDB format.
 
-- `geoip:phishing`  
-  Contains Phishing IP addresses.
+## Services.mmdb
 
-- `geoip:malware`  
-  Contains Active Malware IP addresses.
+same as `GeoIP-Services` but in Maxmind's MMDB format.
 
 ## GeoSite
 
@@ -191,6 +253,106 @@ This is an Enhanced and All-in-One set of geo-location routing files optimized f
 
 ## sing-box core
 
+### Rule-Set (Requires sing-box v1.8.0+)
+
+Add the following to your sing-box client configuration:
+
+```
+"outbounds": [
+  {
+    "type": "direct",
+    "tag": "direct"
+  },
+  {
+    "type": "block",
+    "tag": "block"
+  }
+],
+"route": {
+    "rules": [
+      {
+        "ip_is_private": true,
+        "outbound": "direct"
+      },
+      {
+        "rule_set": [
+          "geosite-category-ads-all",
+          "geosite-malware",
+          "geosite-phishing",
+          "geosite-cryptominers",
+          "geoip-malware",
+          "geoip-phishing"
+        ],
+        "outbound": "block"
+      },
+      {
+        "rule_set": [
+          "geosite-ir",
+          "geoip-ir"
+        ],
+        "outbound": "direct"
+      }
+    ],
+    "rule_set": [
+      {
+        "tag": "geosite-ir",
+        "type": "remote",
+        "format": "binary",
+        "url": "https://raw.githubusercontent.com/Chocolate4U/Iran-sing-box-rules/rule-set/geosite-ir.srs"
+      },
+      {
+        "tag": "geosite-category-ads-all",
+        "type": "remote",
+        "format": "binary",
+        "url": "https://raw.githubusercontent.com/Chocolate4U/Iran-sing-box-rules/rule-set/geosite-category-ads-all.srs"
+      },
+      {
+        "tag": "geosite-malware",
+        "type": "remote",
+        "format": "binary",
+        "url": "https://raw.githubusercontent.com/Chocolate4U/Iran-sing-box-rules/rule-set/geosite-malware.srs"
+      },
+      {
+        "tag": "geosite-phishing",
+        "type": "remote",
+        "format": "binary",
+        "url": "https://raw.githubusercontent.com/Chocolate4U/Iran-sing-box-rules/rule-set/geosite-phishing.srs"
+      },
+      {
+        "tag": "geosite-cryptominers",
+        "type": "remote",
+        "format": "binary",
+        "url": "https://raw.githubusercontent.com/Chocolate4U/Iran-sing-box-rules/rule-set/geosite-cryptominers.srs"
+      },
+      {
+        "tag": "geoip-ir",
+        "type": "remote",
+        "format": "binary",
+        "url": "https://raw.githubusercontent.com/Chocolate4U/Iran-sing-box-rules/rule-set/geoip-ir.srs"
+      },
+      {
+        "tag": "geoip-malware",
+        "type": "remote",
+        "format": "binary",
+        "url": "https://raw.githubusercontent.com/Chocolate4U/Iran-sing-box-rules/rule-set/geoip-malware.srs"
+      },
+      {
+        "tag": "geoip-phishing",
+        "type": "remote",
+        "format": "binary",
+        "url": "https://raw.githubusercontent.com/Chocolate4U/Iran-sing-box-rules/rule-set/geoip-phishing.srs"
+      }
+    ]
+  },
+  "experimental": {
+    "cache_file": {
+      "enabled": true
+    }
+  }
+```
+
+### DB
+
 Add the following to your sing-box client configuration:
 
 ```
@@ -235,11 +397,7 @@ Add the following to your sing-box client configuration:
     {
       "geoip": [
         "ir",
-        "private",
-        "arvancloud",
-        "derakcloud",
-        "iranserver",
-        "parspack"
+        "private"
       ],
       "outbound": "direct"
     }
@@ -277,8 +435,8 @@ All rights are reserved for All upstream sources used in this project according 
 
 | Source                 | Maintainer           | Home Page                                                                                 | License                                                                              | Category          |
 | ---------------------- | -------------------- | ----------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------ | ----------------- |
-| GeoLite2               | MaxMind              | [Home Page](https://dev.maxmind.com/geoip/geolite2-free-geolocation-data)                 | [CC BY-SA 4.0](https://dev.maxmind.com/geoip/geolite2-free-geolocation-data#license) | ir, ru, us        |
-| IP2Location LITE       | IP2Location          | [Home Page](https://lite.ip2location.com/ip2location-lite)                                | [CC BY-SA 4.0](https://lite.ip2location.com/terms-of-use)                            | ir                |
+| GeoLite2               | MaxMind              | [Home Page](https://dev.maxmind.com/geoip/geolite2-free-geolocation-data)                 | [CC BY-SA 4.0](https://dev.maxmind.com/geoip/geolite2-free-geolocation-data#license) | Country IPs       |
+| IP2Location LITE       | IP2Location          | [Home Page](https://lite.ip2location.com/ip2location-lite)                                | [CC BY-SA 4.0](https://lite.ip2location.com/terms-of-use)                            | Country IPs       |
 | ITO GOV                | ITO GOV              | [Home Page](https://eservices.ito.gov.ir/Page/IPListMessenger)                            | N/A                                                                                  | ir(messenger IPs) |
 | V2ray-rules-dat        | Loyalsoldier         | [Home Page](https://github.com/Loyalsoldier/v2ray-rules-dat)                              | [GPL-3.0](https://github.com/Loyalsoldier/v2ray-rules-dat/blob/master/LICENSE)       | cn                |
 | Arvan Cloud            | Arvan Cloud          | [Home Page](https://www.arvancloud.ir/en/dev/ips)                                         | All rights reserved                                                                  | arvancloud        |

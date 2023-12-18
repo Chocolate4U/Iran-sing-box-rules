@@ -12,6 +12,7 @@
 </p>
 
 # :writing_hand: معرفی
+
 مجموعه ای از قوانین مسیریابی بهبود یافته و جامع که برای کاربران ایرانی بهینه شده و قابل استفاده در هسته sing-box و کلیه کلاینت های آن میباشد.
 
 :bulb: برای قوانین مسیریابی v2ray به اینجا مراجعه کنید [Iran V2Ray Rules](https://github.com/Chocolate4U/Iran-v2ray-rules)  
@@ -21,32 +22,25 @@
 
 ## GeoIP
 
+- <p align="right">شامل کلیه IP های تمامی کشورها از هر دو دیتابیس Maxmind و IP2Location.</p>
+
 - `geoip:ir`
   <p align="right">دربر گیرنده IP های ایران استخراج شده از دیتابیس Maxmind و IP2Location به علاوه IP های پیامرسان های ایرانی از جمله "ایتا"، "روبیکا" و غیره.</p>
-
-- `geoip:cn`
-  <p align="right">دربر گیرنده IP های چین گرفته شده از مخزن Loyalsoldier/v2ray-rulesdat.</p>
-
-- `geoip:ru`
-  <p align="right">دربر گیرنده IP های روسیه استخراج شده از دیتابس MaxMind.</p>
-
-- `geoip:us`
-  <p align="right"></p>
 
 - `geoip:private`
   <p align="right">دربر گیرنده IP های ایالات متحده استخراج شده از دیتابس MaxMind.</p>
 
 - `geoip:arvancloud`
-  <p align="right">دربر گیرنده IP های سرویس توزیع محتوای ابرآروان.</p>
+  <p align="right">دربر گیرنده IP های سرویس توزیع محتوای ابرآروان. :information_source: این دسته بندی در "geoip:ir" ادغام شده و در صورت استفاده از "geoip:ir"، نیازی به این دسته بندی نیست.</p>
 
 - `geoip:derakcloud`
-  <p align="right">دربر گیرنده IP های سرویس توزیع محتوای ابردراک.</p>
+  <p align="right">دربر گیرنده IP های سرویس توزیع محتوای ابردراک. :information_source: این دسته بندی در "geoip:ir" ادغام شده و در صورت استفاده از "geoip:ir"، نیازی به این دسته بندی نیست.</p>
 
 - `geoip:iranserver`
-  <p align="right">دربر گیرنده IP های سرویس توزیع محتوای ایران سرور.</p>
+  <p align="right">دربر گیرنده IP های سرویس توزیع محتوای ایران سرور. :information_source: این دسته بندی در "geoip:ir" ادغام شده و در صورت استفاده از "geoip:ir"، نیازی به این دسته بندی نیست.</p>
 
 - `geoip:parspack`
-  <p align="right">دربر گیرنده IP های سرویس توزیع محتوای پارس پک.</p>
+  <p align="right">دربر گیرنده IP های سرویس توزیع محتوای پارس پک. :information_source: این دسته بندی در "geoip:ir" ادغام شده و در صورت استفاده از "geoip:ir"، نیازی به این دسته بندی نیست.</p>
 
 - `geoip:cloudflare`
   <p align="right">دربرگیرنده IP های سرویس توزیع محتوای کلودفلر.</p>
@@ -109,7 +103,77 @@
 - `geoip:malware`
   <p align="right">دربر گیرنده IP های بدافزار.</p>
 
+## GeoIP-Services
+
+- `geoip:arvancloud`
+  <p align="right">دربر گیرنده IP های سرویس توزیع محتوای ابرآروان.</p>
+
+- `geoip:derakcloud`
+  <p align="right">دربر گیرنده IP های سرویس توزیع محتوای ابردراک.</p>
+
+- `geoip:iranserver`
+  <p align="right">دربر گیرنده IP های سرویس توزیع محتوای ایران سرور.</p>
+
+- `geoip:parspack`
+  <p align="right">دربر گیرنده IP های سرویس توزیع محتوای پارس پک.</p>
+
+- `geoip:cloudflare`
+  <p align="right">دربرگیرنده IP های سرویس توزیع محتوای کلودفلر.</p>
+
+- `geoip:google`
+  <p align="right">دربر گیرنده IP های گوگل، گوگل کلود و گوگل بات.</p>
+
+- `geoip:amazon`
+  <p align="right">در برگیرنده IP های آمازون و سرویس ابری آمازون(AWS).</p>
+
+- `geoip:microsoft`
+  <p align="right">دربر گیرنده IP های مایکروسافت و سرویس ابری آژور.</p>
+
+- `geoip:bing`
+  <p align="right">دربر گیرنده IP های موتور جستجوی بینگ.</p>
+
+- `geoip:github`
+  <p align="right">دربر گیرنده IP های گیت هاب.</p>
+
+- `geoip:facebook`
+  <p align="right">دربر گیرنده IP های اکوسیستم متا، از جمله فیسبوک، اینستاگرام و واتس اپ.</p>
+
+- `geoip:twitter`
+  <p align="right">دربر گیرنده IP های توییتر (یا به عبارتی X!).</p>
+
+- `geoip:telegram`
+  <p align="right">دربر گیرنده IP های تلگرام.</p>
+
+- `geoip:oracle`
+  <p align="right">دربر گیرنده IP های سرویس ابری اوراکل.</p>
+
+- `geoip:digitalocean`
+  <p align="right">دربر گیرنده IP سرویس های ابری دیجیتال اوشن.</p>
+
+- `geoip:linode`
+  <p align="right">دربر گیرنده IP سرویس ابری لینود.</p>
+
+- `geoip:openai`
+  <p align="right">دربر گیرنده IP های OpenAI و ChatGPT.</p>
+
+## Country.mmdb
+
+<p align="right">مثل دسته "GeoIP" اما با فرمت اختصاصی MaxMind.</p>
+
+## Country-lite.mmdb
+
+<p align="right">مثل دسته "GeoIP-Lite" اما با فرمت اختصاصی MaxMind.</p>
+
+## Security-IP.mmdb
+
+<p align="right">مثل دسته "Security-IP" اما با فرمت اختصاصی MaxMind.</p>
+
+## Services.mmdb
+
+<p align="right">مثل دسته "GeoIP-Services" اما با فرمت اختصاصی MaxMind.</p>
+
 ## GeoSite
+
 - کلیه دسته بندی ها موجود در مخزن [domain-list-community](https://github.com/v2fly/domain-list-community) پشتبانی می شوند، به علاوه موارد زیر:
 
 - `geosite:ir`
@@ -163,29 +227,135 @@
   <p align="right">دربر گیرنده لیستی از استخراج کننده های رمزارز که در پس زمینه مرورگر شروع به استخراج کرده و بر کارایی سیستم کاربر تاثیر منفی می گزارند.</p>
 
 # :arrow_down: نحوه دانلود
+
 ## <picture><source media="(prefers-color-scheme: dark)" srcset="https://cdn.simpleicons.org/github/white"><source media="(prefers-color-scheme: light)" srcset="https://cdn.simpleicons.org/github/dark"><img height="32" width="32" alt="github logo in dark and light mode." src="https://cdn.simpleicons.org/github/dark"></picture> از گیت هاب
+
 `GeoIP` [https://github.com/chocolate4u/Iran-sing-box-rules/releases/latest/download/geoip.db](https://github.com/chocolate4u/Iran-sing-box-rules/releases/latest/download/geoip.db)  
-`GeoSite` [https://github.com/chocolate4u/Iran-sing-box-rules/releases/latest/download/geosite.db](https://github.com/chocolate4u/Iran-sing-box-rules/releases/latest/download/geosite.db)  
+`GeoSite` [https://github.com/chocolate4u/Iran-sing-box-rules/releases/latest/download/geosite.db](https://github.com/chocolate4u/Iran-sing-box-rules/releases/latest/download/geosite.db)
 
 `GeoIP-Lite` [https://github.com/chocolate4u/Iran-sing-box-rules/releases/latest/download/geoip-lite.db](https://github.com/chocolate4u/Iran-sing-box-rules/releases/latest/download/geoip-lite.db)  
-`GeoSite-Lite` [https://github.com/chocolate4u/Iran-sing-box-rules/releases/latest/download/geosite-lite.db](https://github.com/chocolate4u/Iran-sing-box-rules/releases/latest/download/geosite-lite.db)  
+`GeoSite-Lite` [https://github.com/chocolate4u/Iran-sing-box-rules/releases/latest/download/geosite-lite.db](https://github.com/chocolate4u/Iran-sing-box-rules/releases/latest/download/geosite-lite.db)
 
 `Security-IP` [https://github.com/chocolate4u/Iran-sing-box-rules/releases/latest/download/security-ip.db](https://github.com/chocolate4u/Iran-sing-box-rules/releases/latest/download/security-ip.db)  
 `Security` [https://github.com/chocolate4u/Iran-sing-box-rules/releases/latest/download/security.db](https://github.com/chocolate4u/Iran-sing-box-rules/releases/latest/download/security.db)
 
 ## <picture><source media="(prefers-color-scheme: dark)" srcset="https://cdn.simpleicons.org/jsdelivr/white"><source media="(prefers-color-scheme: light)" srcset="https://cdn.simpleicons.org/jsdelivr/dark"><img height="32" width="32" alt="github logo in dark and light mode." src="https://cdn.simpleicons.org/jsdelivr/dark"></picture> از سرویس توزیع محتوای jsDelivr
+
 `GeoIP` [https://cdn.jsdelivr.net/gh/chocolate4u/Iran-sing-box-rules@release/geoip.db](https://cdn.jsdelivr.net/gh/chocolate4u/Iran-sing-box-rules@release/geoip.db)  
-`GeoSite` [https://cdn.jsdelivr.net/gh/chocolate4u/Iran-sing-box-rules@release/geosite.db](https://cdn.jsdelivr.net/gh/chocolate4u/Iran-sing-box-rules@release/geosite.db)  
+`GeoSite` [https://cdn.jsdelivr.net/gh/chocolate4u/Iran-sing-box-rules@release/geosite.db](https://cdn.jsdelivr.net/gh/chocolate4u/Iran-sing-box-rules@release/geosite.db)
 
 `GeoIP-Lite` [https://cdn.jsdelivr.net/gh/chocolate4u/Iran-sing-box-rules@release/geoip-lite.db](https://cdn.jsdelivr.net/gh/chocolate4u/Iran-sing-box-rules@release/geoip-lite.db)  
-`GeoSite-Lite` [https://cdn.jsdelivr.net/gh/chocolate4u/Iran-sing-box-rules@release/geosite-lite.db](https://cdn.jsdelivr.net/gh/chocolate4u/Iran-sing-box-rules@release/geosite-lite.db)  
+`GeoSite-Lite` [https://cdn.jsdelivr.net/gh/chocolate4u/Iran-sing-box-rules@release/geosite-lite.db](https://cdn.jsdelivr.net/gh/chocolate4u/Iran-sing-box-rules@release/geosite-lite.db)
 
 `Security-IP` [https://cdn.jsdelivr.net/gh/chocolate4u/Iran-sing-box-rules@release/security-ip.db](https://cdn.jsdelivr.net/gh/chocolate4u/Iran-sing-box-rules@release/security-ip.db)  
 `Security` [https://cdn.jsdelivr.net/gh/chocolate4u/Iran-sing-box-rules@release/security.db](https://cdn.jsdelivr.net/gh/chocolate4u/Iran-sing-box-rules@release/security.db)
 
 # :computer: نحوه استفاده
+
 ## هسته sing-box
+
+### Rule-Set (Requires sing-box v1.8.0+)
+
 قسمت زیر را به قسمت مسیریابی فایل کانفیگ خود اضافه کنید:
+
+```
+"outbounds": [
+  {
+    "type": "direct",
+    "tag": "direct"
+  },
+  {
+    "type": "block",
+    "tag": "block"
+  }
+],
+"route": {
+    "rules": [
+      {
+        "ip_is_private": true,
+        "outbound": "direct"
+      },
+      {
+        "rule_set": [
+          "geosite-category-ads-all",
+          "geosite-malware",
+          "geosite-phishing",
+          "geosite-cryptominers",
+          "geoip-malware",
+          "geoip-phishing"
+        ],
+        "outbound": "block"
+      },
+      {
+        "rule_set": [
+          "geosite-ir",
+          "geoip-ir"
+        ],
+        "outbound": "direct"
+      }
+    ],
+    "rule_set": [
+      {
+        "tag": "geosite-ir",
+        "type": "remote",
+        "format": "binary",
+        "url": "https://raw.githubusercontent.com/Chocolate4U/Iran-sing-box-rules/rule-set/geosite-ir.srs"
+      },
+      {
+        "tag": "geosite-category-ads-all",
+        "type": "remote",
+        "format": "binary",
+        "url": "https://raw.githubusercontent.com/Chocolate4U/Iran-sing-box-rules/rule-set/geosite-category-ads-all.srs"
+      },
+      {
+        "tag": "geosite-malware",
+        "type": "remote",
+        "format": "binary",
+        "url": "https://raw.githubusercontent.com/Chocolate4U/Iran-sing-box-rules/rule-set/geosite-malware.srs"
+      },
+      {
+        "tag": "geosite-phishing",
+        "type": "remote",
+        "format": "binary",
+        "url": "https://raw.githubusercontent.com/Chocolate4U/Iran-sing-box-rules/rule-set/geosite-phishing.srs"
+      },
+      {
+        "tag": "geosite-cryptominers",
+        "type": "remote",
+        "format": "binary",
+        "url": "https://raw.githubusercontent.com/Chocolate4U/Iran-sing-box-rules/rule-set/geosite-cryptominers.srs"
+      },
+      {
+        "tag": "geoip-ir",
+        "type": "remote",
+        "format": "binary",
+        "url": "https://raw.githubusercontent.com/Chocolate4U/Iran-sing-box-rules/rule-set/geoip-ir.srs"
+      },
+      {
+        "tag": "geoip-malware",
+        "type": "remote",
+        "format": "binary",
+        "url": "https://raw.githubusercontent.com/Chocolate4U/Iran-sing-box-rules/rule-set/geoip-malware.srs"
+      },
+      {
+        "tag": "geoip-phishing",
+        "type": "remote",
+        "format": "binary",
+        "url": "https://raw.githubusercontent.com/Chocolate4U/Iran-sing-box-rules/rule-set/geoip-phishing.srs"
+      }
+    ]
+  },
+  "experimental": {
+    "cache_file": {
+      "enabled": true
+    }
+  }
+```
+
+### DB
+
+قسمت زیر را به قسمت مسیریابی فایل کانفیگ خود اضافه کنید:
+
 ```
 "outbounds": [
   {
@@ -228,11 +398,7 @@
     {
       "geoip": [
         "ir",
-        "private",
-        "arvancloud",
-        "derakcloud",
-        "iranserver",
-        "parspack"
+        "private"
       ],
       "outbound": "direct"
     }
@@ -241,33 +407,37 @@
 ```
 
 # :information_desk_person: این ها چطوری ساخته شدن؟
+
 فایل های `geoip.db`,`geoip-lite.db` با استفاده از سورس کد موجود در [فورک](https://github.com/Chocolate4U/sing-geoip) من از [sing-geoip](https://github.com/SagerNet/sing-geoip) ساخته شدن. از فایل `Country.mmdb`,`Country-lite.mmdb` موجود در مخزن [Iran V2Ray Rules](https://github.com/Chocolate4U/Iran-v2ray-rules) برای ساخت این فایل ها استفاده می شود.  
 فایل های `geosite.db`,`geosite-lite.db` با استفاده از سورس کد موجود در [فورک](https://github.com/Chocolate4U/sing-geosite) من از [sing-geosite](https://github.com/SagerNet/sing-geosite) ساخته شده. از فایل `geosite.dat`,`geosite-lite.dat` موجود در مخزن [Iran V2Ray Rules](https://github.com/Chocolate4U/Iran-v2ray-rules) برای ساخت این فایل ها استفاده می شود.
 
 # :handshake: مشارکت
-هرگونه مشارکتی در این مخزن مورد استقبال قرار میگیرد. شما به دو روش میتوانید در این مخزن مشارکت داشته باشید:  
+
+هرگونه مشارکتی در این مخزن مورد استقبال قرار میگیرد. شما به دو روش میتوانید در این مخزن مشارکت داشته باشید:
+
 1. مشارکت در سورس های مورد استفاده این مخزن  
    دامنه ای میشناسید که باید بایپس شود؟ به اینجا گزارش بدهید [Iran Hosted Domains](https://github.com/bootmortis/iran-hosted-domains)  
    دامنه تبلیغاتی ایرانی میشناسید که باید مسدود شود؟ به اینجا گزارش بدهید [PersianBlocker](https://github.com/MasterKia/PersianBlocker)  
-   دامنه ای میشناسید که... خیلی خوب فکر کنم متوجه منظورم شدید!  
+   دامنه ای میشناسید که... خیلی خوب فکر کنم متوجه منظورم شدید!
 2. مستقیما در این مخزن مشارکت داشته باشید  
    مشکلات را گزارش کنید، سورس های جدید پیشنهاد بدهید، و یا هر گونه ایده که به بهتر شدن این مخزن کمک میکند را با ما به اشتراک بگذارید.
 
 :raising_hand_man: یک مورد دیگه، اگر این مخزن برای شما مفید واقع شده لطفا یک ستاره در بالای این صفحه از خودتون به جا بگذارین تا به بیشتر دیده شدن این لیست کمک بشه.
 
-
 # :copyright: لایسنس
+
 این پروژه، به جز منابع مورد استفاده، تحت لایسنس GNU GPLv3 قرار دارد. برای جزئیات بیشتر اینجا را ببینید [لایسنس](LICENSE)
 
 تمامی حقوق برای منابع استفاده شده بر اساس لایسنس های مربوطه شان محفوظ است. لطفا برای اطلاعات بیشتر به قسمت منابع مراجعه کنید.
 
 # :package: منابع
+
 ## GeoIP
 
 | Source                 | Maintainer           | Home Page                                                                                 | License                                                                              | Category          |
 | ---------------------- | -------------------- | ----------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------ | ----------------- |
-| GeoLite2               | MaxMind              | [Home Page](https://dev.maxmind.com/geoip/geolite2-free-geolocation-data)                 | [CC BY-SA 4.0](https://dev.maxmind.com/geoip/geolite2-free-geolocation-data#license) | ir, ru, us        |
-| IP2Location LITE       | IP2Location          | [Home Page](https://lite.ip2location.com/ip2location-lite)                                | [CC BY-SA 4.0](https://lite.ip2location.com/terms-of-use)                            | ir                |
+| GeoLite2               | MaxMind              | [Home Page](https://dev.maxmind.com/geoip/geolite2-free-geolocation-data)                 | [CC BY-SA 4.0](https://dev.maxmind.com/geoip/geolite2-free-geolocation-data#license) | Country IPs       |
+| IP2Location LITE       | IP2Location          | [Home Page](https://lite.ip2location.com/ip2location-lite)                                | [CC BY-SA 4.0](https://lite.ip2location.com/terms-of-use)                            | Country IPs       |
 | ITO GOV                | ITO GOV              | [Home Page](https://eservices.ito.gov.ir/Page/IPListMessenger)                            | N/A                                                                                  | ir(messenger IPs) |
 | V2ray-rules-dat        | Loyalsoldier         | [Home Page](https://github.com/Loyalsoldier/v2ray-rules-dat)                              | [GPL-3.0](https://github.com/Loyalsoldier/v2ray-rules-dat/blob/master/LICENSE)       | cn                |
 | Arvan Cloud            | Arvan Cloud          | [Home Page](https://www.arvancloud.ir/en/dev/ips)                                         | All rights reserved                                                                  | arvancloud        |
@@ -297,9 +467,11 @@
 | Domain list community       | Domain list community | [Home Page](https://github.com/v2fly/domain-list-community)    | [MIT](https://github.com/v2fly/domain-list-community/blob/master/LICENSE)       | everything else |
 
 # :warning: سلب مسئولیت
+
 این مخزن هیچگونه همکاری، ارتباط، مجوز، و یا به طور کلی به هیچ طریقی هیچ گونه ارتباطی به طور رسمی با هریک از منابع ذکر شده اعم از وبسایت ها، سرویس ها و یا هر چیزی که ممکن است به آن ارتباط داشته باشد، ندارد.  
 اطلاعات موجود در این مخزن از منابع در دسترس عموم جمع آوری گردیده و فقط به منظور اطلاع رسانی بدون هیچ ضمانتی مبنی بر دقیق بودن و یا در دسترس بودن عرضه شده است. همچنین ما هیچگونه مسئولیتی در برابر هر گونه خسارت ناشی از استفاده از اطلاعات این مخزن که ممکن است به وجود بیاید، نداریم. لطفا قبل از استفاده از اطلاعات این مخزن، تحقیقات لازم را به عمل بیاورید.
 
 # :pray: تشکر ویژه
+
 - همه maintainer های نامبرده شده در این مخزن
 - [Project S](https://github.com/SagerNet)
