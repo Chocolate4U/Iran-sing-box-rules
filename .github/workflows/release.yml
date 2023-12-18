@@ -14,11 +14,11 @@ on:
 jobs:
   build:
     runs-on: ubuntu-latest
-    
+
     steps:
       - name: Checkout Iran-sing-box-rules repository
         uses: actions/checkout@v4
-      
+
       - name: Checkout sing-geoip repository
         uses: actions/checkout@v4
         with:
@@ -34,7 +34,7 @@ jobs:
       - name: Setup Go
         uses: actions/setup-go@v5
         with:
-          go-version: '1.21'
+          go-version: "1.21"
           cache-dependency-path: sing-geoip/go.sum
 
       - name: Set ENV variables
@@ -43,20 +43,24 @@ jobs:
           echo "TAG_NAME=$(date +%Y%m%d%H%M)" >> $GITHUB_ENV
           echo "RELEASE_DATE=$(date +'%F %T %Z')" >> $GITHUB_ENV
 
-      - name: Create release directory
-        run: mkdir release
+      - name: Create release and rule-set directories
+        run: mkdir release rule-set
 
       - name: Generate geoip.db file
         run: |
           cd sing-geoip
+          mkdir rule-set
           go run -v .
           mv *.db ../release
+          cp -a rule-set/. ../rule-set
 
       - name: Generate geosite.db file
         run: |
           cd sing-geosite
+          mkdir rule-set
           go run -v .
           mv *.db ../release
+          cp -a rule-set/. ../rule-set
 
       - name: Generate sha256sum
         run: |
@@ -66,9 +70,10 @@ jobs:
           sha256sum release/geosite-lite.db > release/geosite-lite.db.sha256sum
           sha256sum release/security-ip.db > release/security-ip.db.sha256sum
           sha256sum release/security.db > release/security.db.sha256sum
-          
+          sha256sum release/geoip-services.db > release/geoip-services.db.sha256sum
+
       - name: Generate Release Notes
-        run: | 
+        run: |
           echo "* Updated on ${{ env.RELEASE_DATE }}" > RELEASE_NOTES
           echo "* Based on [Iran-v2ray-rules](https://github.com/Chocolate4U/Iran-v2ray-rules)" >> RELEASE_NOTES
 
@@ -85,12 +90,30 @@ jobs:
           git remote add origin "https://${{ github.actor }}:${{ secrets.GITHUB_TOKEN }}@github.com/${{ github.repository }}"
           git push -f origin release
 
+      - name: Push rule sets to rule-set branch
+        if: ${{ !inputs.PRE_RELEASE }}
+        run: |
+          cd rule-set || exit 1
+          git init
+          git config --local user.name "github-actions[bot]"
+          git config --local user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git checkout -b rule-set
+          git add .
+          git commit -m "${{ env.RELEASE_NAME }}"
+          git remote add origin "https://${{ github.actor }}:${{ secrets.GITHUB_TOKEN }}@github.com/${{ github.repository }}"
+          git push -f origin rule-set
+
       - name: Purge jsDelivr CDN cache
         if: ${{ !inputs.PRE_RELEASE }}
         run: |
           cd release || exit 1
           for file in $(ls); do
             curl -i "https://purge.jsdelivr.net/gh/${{ github.repository }}@release/${file}"
+          done
+
+          cd && cd rule-set || exit 1
+          for file in $(ls); do
+            curl -i "https://purge.jsdelivr.net/gh/${{ github.repository }}@rule-set/${file}"
           done
 
       - name: Release and upload assets
@@ -104,7 +127,7 @@ jobs:
           files: ./release/*
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-      
+
       - name: Clean older releases
         if: ${{ !inputs.PRE_RELEASE }}
         uses: dev-drprasad/delete-older-releases@v0.3.2
