@@ -22,6 +22,17 @@ This is an Enhanced and All-in-One set of geo-location routing files optimized f
 
 # :page_with_curl: Categories
 
+## Rule-Set
+
+New Geo-Assets format introduced in sing-box v1.8.0+ in order to replace GeoIP and GeoSite.  
+For more information visit [rule-set](https://sing-box.sagernet.org/configuration/rule-set/)  
+
+See [here](https://github.com/Chocolate4U/Iran-sing-box-rules/tree/rule-set) for a list of all supported rule-set assets.
+
+---
+> [!WARNING]
+> GeoIP, GeoSite and all `.db` files in general are deprecated in sing-box v1.8.0+ and you should use Rule-Set instead. Only use `.db` assets if you are using sing-box v1.7.x and lower.
+
 ## GeoIP
 
 - Contains IP Addresses of all countries from Maxmind and IP2Location databases.
@@ -229,6 +240,11 @@ same as `GeoIP-Services` but in Maxmind's MMDB format.
 
 ## <picture><source media="(prefers-color-scheme: dark)" srcset="https://cdn.simpleicons.org/github/white"><source media="(prefers-color-scheme: light)" srcset="https://cdn.simpleicons.org/github/dark"><img height="32" width="32" alt="github logo in dark and light mode." src="https://cdn.simpleicons.org/github/dark"></picture> From GitHub
 
+:bulb: Rule-Set assets are in these formats: `geoip-xx.srs` and `geosite-xx.srs`. Replace `xx` with your desired category. For example:  
+
+`Rule-Set` [https://raw.githubusercontent.com/Chocolate4U/Iran-sing-box-rules/rule-set/geoip-ir.srs](https://raw.githubusercontent.com/Chocolate4U/Iran-sing-box-rules/rule-set/geoip-ir.srs)  
+`Rule-Set` [https://raw.githubusercontent.com/Chocolate4U/Iran-sing-box-rules/rule-set/geosite-ir.srs](https://raw.githubusercontent.com/Chocolate4U/Iran-sing-box-rules/rule-set/geosite-ir.srs)
+
 `GeoIP` [https://github.com/chocolate4u/Iran-sing-box-rules/releases/latest/download/geoip.db](https://github.com/chocolate4u/Iran-sing-box-rules/releases/latest/download/geoip.db)  
 `GeoSite` [https://github.com/chocolate4u/Iran-sing-box-rules/releases/latest/download/geosite.db](https://github.com/chocolate4u/Iran-sing-box-rules/releases/latest/download/geosite.db)
 
@@ -239,6 +255,11 @@ same as `GeoIP-Services` but in Maxmind's MMDB format.
 `Security` [https://github.com/chocolate4u/Iran-sing-box-rules/releases/latest/download/security.db](https://github.com/chocolate4u/Iran-sing-box-rules/releases/latest/download/security.db)
 
 ## <picture><source media="(prefers-color-scheme: dark)" srcset="https://cdn.simpleicons.org/jsdelivr/white"><source media="(prefers-color-scheme: light)" srcset="https://cdn.simpleicons.org/jsdelivr/dark"><img height="32" width="32" alt="github logo in dark and light mode." src="https://cdn.simpleicons.org/jsdelivr/dark"></picture> From jsdelivr CDN
+
+:bulb: Rule-Set assets are in these formats: `geoip-xx.srs` and `geosite-xx.srs`. Replace `xx` with your desired category. For example:  
+
+`Rule-Set` [https://cdn.jsdelivr.net/gh/chocolate4u/Iran-sing-box-rules@rule-set/geoip-ir.srs](https://cdn.jsdelivr.net/gh/chocolate4u/Iran-sing-box-rules@rule-set/geoip-ir.srs)  
+`Rule-Set` [https://cdn.jsdelivr.net/gh/chocolate4u/Iran-sing-box-rules@rule-set/geosite-ir.srs](https://cdn.jsdelivr.net/gh/chocolate4u/Iran-sing-box-rules@rule-set/geosite-ir.srs)
 
 `GeoIP` [https://cdn.jsdelivr.net/gh/chocolate4u/Iran-sing-box-rules@release/geoip.db](https://cdn.jsdelivr.net/gh/chocolate4u/Iran-sing-box-rules@release/geoip.db)  
 `GeoSite` [https://cdn.jsdelivr.net/gh/chocolate4u/Iran-sing-box-rules@release/geosite.db](https://cdn.jsdelivr.net/gh/chocolate4u/Iran-sing-box-rules@release/geosite.db)
