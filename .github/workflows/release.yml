@@ -9,7 +9,7 @@ on:
         type: boolean
         default: false
   schedule:
-    - cron: "15 1 * * *"
+    - cron: "50 4 * * *"
 
 jobs:
   build:
@@ -41,7 +41,7 @@ jobs:
         run: |
           echo "RELEASE_NAME=$(date +%Y%m%d%H%M)" >> $GITHUB_ENV
           echo "TAG_NAME=$(date +%Y%m%d%H%M)" >> $GITHUB_ENV
-          echo "RELEASE_DATE=$(date +'%F %T %Z')" >> $GITHUB_ENV
+          echo "RELEASE_DATE=$(date +'%A %F %T %Z')" >> $GITHUB_ENV
 
       - name: Create release and rule-set directories
         run: mkdir release rule-set
@@ -75,7 +75,6 @@ jobs:
       - name: Generate Release Notes
         run: |
           echo "* Updated on ${{ env.RELEASE_DATE }}" > RELEASE_NOTES
-          echo "* Based on [Iran-v2ray-rules](https://github.com/Chocolate4U/Iran-v2ray-rules)" >> RELEASE_NOTES
 
       - name: Push assets to release branch
         if: ${{ !inputs.PRE_RELEASE }}
@@ -120,7 +119,7 @@ jobs:
           done
 
       - name: Release and upload assets
-        uses: softprops/action-gh-release@v1
+        uses: softprops/action-gh-release@v2
         with:
           name: ${{ env.RELEASE_NAME }}
           tag_name: ${{ env.TAG_NAME }}
@@ -133,7 +132,7 @@ jobs:
 
       - name: Clean older releases
         if: ${{ !inputs.PRE_RELEASE }}
-        uses: dev-drprasad/delete-older-releases@v0.3.2
+        uses: dev-drprasad/delete-older-releases@v0.3.3
         with:
           keep_latest: 7
           delete_tags: true
