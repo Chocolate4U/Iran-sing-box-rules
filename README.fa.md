@@ -246,14 +246,14 @@
 `Rule-Set` [https://raw.githubusercontent.com/Chocolate4U/Iran-sing-box-rules/rule-set/geoip-ir.srs](https://raw.githubusercontent.com/Chocolate4U/Iran-sing-box-rules/rule-set/geoip-ir.srs)  
 `Rule-Set` [https://raw.githubusercontent.com/Chocolate4U/Iran-sing-box-rules/rule-set/geosite-ir.srs](https://raw.githubusercontent.com/Chocolate4U/Iran-sing-box-rules/rule-set/geosite-ir.srs)
 
-`GeoIP` [https://github.com/chocolate4u/Iran-sing-box-rules/releases/latest/download/geoip.db](https://github.com/chocolate4u/Iran-sing-box-rules/releases/latest/download/geoip.db)  
-`GeoSite` [https://github.com/chocolate4u/Iran-sing-box-rules/releases/latest/download/geosite.db](https://github.com/chocolate4u/Iran-sing-box-rules/releases/latest/download/geosite.db)
+`GeoIP` [https://raw.githubusercontent.com/Chocolate4U/Iran-sing-box-rules/release/geoip.db](https://raw.githubusercontent.com/Chocolate4U/Iran-sing-box-rules/release/geoip.db)  
+`GeoSite` [https://raw.githubusercontent.com/Chocolate4U/Iran-sing-box-rules/release/geosite.db](https://raw.githubusercontent.com/Chocolate4U/Iran-sing-box-rules/release/geosite.db)
 
-`GeoIP-Lite` [https://github.com/chocolate4u/Iran-sing-box-rules/releases/latest/download/geoip-lite.db](https://github.com/chocolate4u/Iran-sing-box-rules/releases/latest/download/geoip-lite.db)  
-`GeoSite-Lite` [https://github.com/chocolate4u/Iran-sing-box-rules/releases/latest/download/geosite-lite.db](https://github.com/chocolate4u/Iran-sing-box-rules/releases/latest/download/geosite-lite.db)
+`GeoIP-Lite` [https://raw.githubusercontent.com/Chocolate4U/Iran-sing-box-rules/release/geoip-lite.db](https://raw.githubusercontent.com/Chocolate4U/Iran-sing-box-rules/release/geoip-lite.db)  
+`GeoSite-Lite` [https://raw.githubusercontent.com/Chocolate4U/Iran-sing-box-rules/release/geosite-lite.db](https://raw.githubusercontent.com/Chocolate4U/Iran-sing-box-rules/release/geosite-lite.db)
 
-`Security-IP` [https://github.com/chocolate4u/Iran-sing-box-rules/releases/latest/download/security-ip.db](https://github.com/chocolate4u/Iran-sing-box-rules/releases/latest/download/security-ip.db)  
-`Security` [https://github.com/chocolate4u/Iran-sing-box-rules/releases/latest/download/security.db](https://github.com/chocolate4u/Iran-sing-box-rules/releases/latest/download/security.db)
+`Security-IP` [https://raw.githubusercontent.com/Chocolate4U/Iran-sing-box-rules/release/security-ip.db](https://raw.githubusercontent.com/Chocolate4U/Iran-sing-box-rules/release/security-ip.db)  
+`Security` [https://raw.githubusercontent.com/Chocolate4U/Iran-sing-box-rules/release/security.db](https://raw.githubusercontent.com/Chocolate4U/Iran-sing-box-rules/release/security.db)
 
 ## <picture><source media="(prefers-color-scheme: dark)" srcset="https://cdn.simpleicons.org/jsdelivr/white"><source media="(prefers-color-scheme: light)" srcset="https://cdn.simpleicons.org/jsdelivr/dark"><img height="32" width="32" alt="github logo in dark and light mode." src="https://cdn.simpleicons.org/jsdelivr/dark"></picture> از سرویس توزیع محتوای jsDelivr
 
@@ -390,10 +390,10 @@
 ],
 "route": {
   "geoip": {
-      "download_url": "https://github.com/Chocolate4U/Iran-sing-box-rules/releases/latest/download/geoip.db"
+      "download_url": "https://raw.githubusercontent.com/Chocolate4U/Iran-sing-box-rules/release/geoip.db"
   },
   "geosite": {
-    "download_url": "https://github.com/Chocolate4U/Iran-sing-box-rules/releases/latest/download/geosite.db"
+    "download_url": "https://raw.githubusercontent.com/Chocolate4U/Iran-sing-box-rules/release/geosite.db"
   },
   "rules": [
     {
