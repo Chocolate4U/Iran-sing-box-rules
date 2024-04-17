@@ -34,6 +34,8 @@ See [here](https://github.com/Chocolate4U/Iran-sing-box-rules/tree/rule-set) for
 > GeoIP, GeoSite and all `.db` files in general are deprecated in sing-box v1.8.0+ and you should use Rule-Set instead. Only use `.db` assets if you are using sing-box v1.7.x and lower.
 
 ## GeoIP
+<details>
+  <summary><strong>Categories in <code>geoip.db</code></strong></summary>
 
 - Contains IP Addresses of all countries from Maxmind and IP2Location databases.
 
@@ -99,24 +101,33 @@ See [here](https://github.com/Chocolate4U/Iran-sing-box-rules/tree/rule-set) for
 
 - `geoip:malware`  
   Contains Active Malware IP addresses.
+</details>
 
 ## GeoIP-Lite
+<details>
+  <summary><strong>Categories in <code>geoip-lite.db</code></strong></summary>
 
 - `geoip:ir`  
   Contains Iran IP addresses from Maxmind and IP2Location databases, IP addresses of Iranian messengers such as `eitaa`, `rubika`, etc. and IP addresses of `arvancloud`, `derakcloud`, `iranserver` and `parspack` CDNs.
 
 - `geoip:private`  
   Contains a list of local (LAN) IP addresses.
+</details>
 
 ## Security-IP
+<details>
+  <summary><strong>Categories in <code>security-ip.db</code></strong></summary>
 
 - `geoip:phishing`  
   Contains Phishing IP addresses.
 
 - `geoip:malware`  
   Contains Active Malware IP addresses.
+</details>
 
 ## GeoIP-Services
+<details>
+  <summary><strong>Categories in <code>geoip-services.db</code></strong></summary>
 
 - `geoip:arvancloud`  
   Contains the IP addresses of ArvanCloud.ir CDN.
@@ -168,24 +179,11 @@ See [here](https://github.com/Chocolate4U/Iran-sing-box-rules/tree/rule-set) for
 
 - `geoip:openai`  
   Contains the IP addresses of OpenAI and ChatGPT.
-
-## Country.mmdb
-
-Same as `GeoIP` but in Maxmind's MMDB format.
-
-## Country-lite.mmdb
-
-Same as `GeoIP Lite` but in Maxmind's MMDB format.
-
-## Security-IP.mmdb
-
-Same as `Security-IP` but in Maxmind's MMDB format.
-
-## Services.mmdb
-
-same as `GeoIP-Services` but in Maxmind's MMDB format.
+</details>
 
 ## GeoSite
+<details>
+  <summary><strong>Categories in <code>geosite.db</code></strong></summary>
 
 - All categories from [domain-list-community](https://github.com/v2fly/domain-list-community) are supported, plus the following categories:
 
@@ -212,8 +210,11 @@ same as `GeoIP-Services` but in Maxmind's MMDB format.
 
 - `geosite:nsfw`
   Contains a list of porn and gambling websites.
+</details>
 
 ## GeoSite-Lite
+<details>
+  <summary><strong>Categories in <code>geosite-lite.db</code></strong></summary>
 
 - `geosite:ir`  
   Contains non-ir TLD Iranian domains (e.g. `.com` `.net` `.org` etc.) with dead domains removed and rules to bypass all `.ir` domains.  
@@ -221,8 +222,11 @@ same as `GeoIP-Services` but in Maxmind's MMDB format.
   The test may not be very accurate, so I recommend updating this list daily or regularly.
 - `geosite:ads`  
   Contains a list of Persian advertisement and tracking domains.
+</details>
 
 ## Security
+<details>
+  <summary><strong>Categories in <code>security.db</code></strong></summary>
 
 - `geosite:category-ads-all`  
   Contains a curated list of Persian and Foreign advertisement and tracking domains based on multiple sources. It is optimized to have as low as possible false positives while also retaining a small size and efficiency.
@@ -235,6 +239,7 @@ same as `GeoIP-Services` but in Maxmind's MMDB format.
 
 - `geosite:cryptominers`  
   Contains a list of cryptocurrency miners that run in the background of a web browser and affect system performance.
+</details>
 
 # :arrow_down: How to download
 
