@@ -18,18 +18,215 @@
 :bulb: برای قوانین مسیریابی v2ray به اینجا مراجعه کنید [Iran V2Ray Rules](https://github.com/Chocolate4U/Iran-v2ray-rules)  
 :bulb: برای قوانین مسیریابی Clash به اینجا مراجعه کنید [Iran Clash Rules](https://github.com/Chocolate4U/Iran-clash-rules)
 
-# :page_with_curl: دسته بندی ها
+# :arrow_down: نحوه دانلود
 
-## Rule-Set
+## <picture><source media="(prefers-color-scheme: dark)" srcset="https://cdn.simpleicons.org/github/white"><source media="(prefers-color-scheme: light)" srcset="https://cdn.simpleicons.org/github/dark"><img height="32" width="32" alt="github logo in dark and light mode." src="https://cdn.simpleicons.org/github/dark"></picture> از گیت هاب
+
+### Rule-Set
 
 فرمت جدید قوانین مسیریابی که در نسخه sing-box 1.8.0 معرفی شده و جایگزین فرمت قدیمی `db.` شده است.  
 برای اطلاعات بیشتر به این لینک رجوع کنید. [rule-set](https://sing-box.sagernet.org/configuration/rule-set/)  
 
 برای دیدن لیست کامل فایل های جدید [اینجا](https://github.com/Chocolate4U/Iran-sing-box-rules/tree/rule-set) را ببینید.
 
----
 > [!WARNING]
 > فرمت قدیمی `db.`, `geosite.db` و `geoip.db` در نسخه +1.8.0 منسخوخ شده اند و باید از فرمت Rule-Set استفاده کنید. تنها در حالتی از فرمت قدیمی استفاده کنید که از نسخه سینگ باکس 1.7 به پایین استفاده میکنید.
+
+:bulb: فرمت کلی فایل های جدید به صورت `geoip-xx.srs` و `geosite-xx.srs` است. قسمت `xx` را با دسته بندی مورد نظر خود جایگزین کنید و مثل مثال زیر دانلود کنید:
+
+`Rule-Set` [https://raw.githubusercontent.com/Chocolate4U/Iran-sing-box-rules/rule-set/geoip-ir.srs](https://raw.githubusercontent.com/Chocolate4U/Iran-sing-box-rules/rule-set/geoip-ir.srs)  
+`Rule-Set` [https://raw.githubusercontent.com/Chocolate4U/Iran-sing-box-rules/rule-set/geosite-ir.srs](https://raw.githubusercontent.com/Chocolate4U/Iran-sing-box-rules/rule-set/geosite-ir.srs)
+
+### DB
+
+`GeoIP` [https://raw.githubusercontent.com/Chocolate4U/Iran-sing-box-rules/release/geoip.db](https://raw.githubusercontent.com/Chocolate4U/Iran-sing-box-rules/release/geoip.db)  
+`GeoSite` [https://raw.githubusercontent.com/Chocolate4U/Iran-sing-box-rules/release/geosite.db](https://raw.githubusercontent.com/Chocolate4U/Iran-sing-box-rules/release/geosite.db)
+
+`GeoIP-Lite` [https://raw.githubusercontent.com/Chocolate4U/Iran-sing-box-rules/release/geoip-lite.db](https://raw.githubusercontent.com/Chocolate4U/Iran-sing-box-rules/release/geoip-lite.db)  
+`GeoSite-Lite` [https://raw.githubusercontent.com/Chocolate4U/Iran-sing-box-rules/release/geosite-lite.db](https://raw.githubusercontent.com/Chocolate4U/Iran-sing-box-rules/release/geosite-lite.db)
+
+`Security-IP` [https://raw.githubusercontent.com/Chocolate4U/Iran-sing-box-rules/release/security-ip.db](https://raw.githubusercontent.com/Chocolate4U/Iran-sing-box-rules/release/security-ip.db)  
+`Security` [https://raw.githubusercontent.com/Chocolate4U/Iran-sing-box-rules/release/security.db](https://raw.githubusercontent.com/Chocolate4U/Iran-sing-box-rules/release/security.db)
+
+## <picture><source media="(prefers-color-scheme: dark)" srcset="https://cdn.simpleicons.org/jsdelivr/white"><source media="(prefers-color-scheme: light)" srcset="https://cdn.simpleicons.org/jsdelivr/dark"><img height="32" width="32" alt="github logo in dark and light mode." src="https://cdn.simpleicons.org/jsdelivr/dark"></picture> از سرویس توزیع محتوای jsDelivr
+
+### Rule-Set
+
+`Rule-Set` [https://cdn.jsdelivr.net/gh/chocolate4u/Iran-sing-box-rules@rule-set/geoip-ir.srs](https://cdn.jsdelivr.net/gh/chocolate4u/Iran-sing-box-rules@rule-set/geoip-ir.srs)  
+`Rule-Set` [https://cdn.jsdelivr.net/gh/chocolate4u/Iran-sing-box-rules@rule-set/geosite-ir.srs](https://cdn.jsdelivr.net/gh/chocolate4u/Iran-sing-box-rules@rule-set/geosite-ir.srs)
+
+### DB
+
+`GeoIP` [https://cdn.jsdelivr.net/gh/chocolate4u/Iran-sing-box-rules@release/geoip.db](https://cdn.jsdelivr.net/gh/chocolate4u/Iran-sing-box-rules@release/geoip.db)  
+`GeoSite` [https://cdn.jsdelivr.net/gh/chocolate4u/Iran-sing-box-rules@release/geosite.db](https://cdn.jsdelivr.net/gh/chocolate4u/Iran-sing-box-rules@release/geosite.db)
+
+`GeoIP-Lite` [https://cdn.jsdelivr.net/gh/chocolate4u/Iran-sing-box-rules@release/geoip-lite.db](https://cdn.jsdelivr.net/gh/chocolate4u/Iran-sing-box-rules@release/geoip-lite.db)  
+`GeoSite-Lite` [https://cdn.jsdelivr.net/gh/chocolate4u/Iran-sing-box-rules@release/geosite-lite.db](https://cdn.jsdelivr.net/gh/chocolate4u/Iran-sing-box-rules@release/geosite-lite.db)
+
+`Security-IP` [https://cdn.jsdelivr.net/gh/chocolate4u/Iran-sing-box-rules@release/security-ip.db](https://cdn.jsdelivr.net/gh/chocolate4u/Iran-sing-box-rules@release/security-ip.db)  
+`Security` [https://cdn.jsdelivr.net/gh/chocolate4u/Iran-sing-box-rules@release/security.db](https://cdn.jsdelivr.net/gh/chocolate4u/Iran-sing-box-rules@release/security.db)
+
+# :computer: نحوه استفاده
+
+## هسته sing-box
+
+<details>
+  <summary><strong>با استفاده از Rule-Set (نیاز به ورژن 1.8.0 به بالا)</strong></summary>
+
+قسمت زیر را به قسمت مسیریابی فایل کانفیگ خود اضافه کنید:
+
+```
+"outbounds": [
+  {
+    "type": "direct",
+    "tag": "direct"
+  },
+  {
+    "type": "block",
+    "tag": "block"
+  }
+],
+"route": {
+    "rules": [
+      {
+        "ip_is_private": true,
+        "outbound": "direct"
+      },
+      {
+        "rule_set": [
+          "geosite-category-ads-all",
+          "geosite-malware",
+          "geosite-phishing",
+          "geosite-cryptominers",
+          "geoip-malware",
+          "geoip-phishing"
+        ],
+        "outbound": "block"
+      },
+      {
+        "rule_set": [
+          "geosite-ir",
+          "geoip-ir"
+        ],
+        "outbound": "direct"
+      }
+    ],
+    "rule_set": [
+      {
+        "tag": "geosite-ir",
+        "type": "remote",
+        "format": "binary",
+        "url": "https://raw.githubusercontent.com/Chocolate4U/Iran-sing-box-rules/rule-set/geosite-ir.srs"
+      },
+      {
+        "tag": "geosite-category-ads-all",
+        "type": "remote",
+        "format": "binary",
+        "url": "https://raw.githubusercontent.com/Chocolate4U/Iran-sing-box-rules/rule-set/geosite-category-ads-all.srs"
+      },
+      {
+        "tag": "geosite-malware",
+        "type": "remote",
+        "format": "binary",
+        "url": "https://raw.githubusercontent.com/Chocolate4U/Iran-sing-box-rules/rule-set/geosite-malware.srs"
+      },
+      {
+        "tag": "geosite-phishing",
+        "type": "remote",
+        "format": "binary",
+        "url": "https://raw.githubusercontent.com/Chocolate4U/Iran-sing-box-rules/rule-set/geosite-phishing.srs"
+      },
+      {
+        "tag": "geosite-cryptominers",
+        "type": "remote",
+        "format": "binary",
+        "url": "https://raw.githubusercontent.com/Chocolate4U/Iran-sing-box-rules/rule-set/geosite-cryptominers.srs"
+      },
+      {
+        "tag": "geoip-ir",
+        "type": "remote",
+        "format": "binary",
+        "url": "https://raw.githubusercontent.com/Chocolate4U/Iran-sing-box-rules/rule-set/geoip-ir.srs"
+      },
+      {
+        "tag": "geoip-malware",
+        "type": "remote",
+        "format": "binary",
+        "url": "https://raw.githubusercontent.com/Chocolate4U/Iran-sing-box-rules/rule-set/geoip-malware.srs"
+      },
+      {
+        "tag": "geoip-phishing",
+        "type": "remote",
+        "format": "binary",
+        "url": "https://raw.githubusercontent.com/Chocolate4U/Iran-sing-box-rules/rule-set/geoip-phishing.srs"
+      }
+    ]
+  },
+  "experimental": {
+    "cache_file": {
+      "enabled": true
+    }
+  }
+```
+</details>
+
+<details>
+  <summary><strong>با استفاده از فایل‌های DB</strong></summary>
+
+قسمت زیر را به قسمت مسیریابی فایل کانفیگ خود اضافه کنید:
+
+```
+"outbounds": [
+  {
+    "type": "direct",
+    "tag": "direct"
+  },
+  {
+    "type": "block",
+    "tag": "block"
+  }
+],
+"route": {
+  "geoip": {
+      "download_url": "https://raw.githubusercontent.com/Chocolate4U/Iran-sing-box-rules/release/geoip.db"
+  },
+  "geosite": {
+    "download_url": "https://raw.githubusercontent.com/Chocolate4U/Iran-sing-box-rules/release/geosite.db"
+  },
+  "rules": [
+    {
+      "geosite": [
+        "category-ads-all",
+        "malware",
+        "phishing",
+        "cryptominers"
+      ],
+      "outbound": "block"
+    },
+    {
+      "geoip": [
+        "malware",
+        "phishing"
+      ],
+      "outbound": "block"
+    },
+    {
+      "geosite": "ir",
+      "outbound": "direct"
+    },
+    {
+      "geoip": [
+        "ir",
+        "private"
+      ],
+      "outbound": "direct"
+    }
+  ]
+}
+```
+</details>
+
+# :page_with_curl: دسته بندی ها
 
 <h2 dir="rtl">GeoIP</h2>
 <details dir="rtl">
@@ -255,196 +452,6 @@
   <p align="right">دربر گیرنده لیستی از استخراج کننده های رمزارز که در پس زمینه مرورگر شروع به استخراج کرده و بر کارایی سیستم کاربر تاثیر منفی می گزارند.</p>
 </ul>
 </details>
-
-# :arrow_down: نحوه دانلود
-
-## <picture><source media="(prefers-color-scheme: dark)" srcset="https://cdn.simpleicons.org/github/white"><source media="(prefers-color-scheme: light)" srcset="https://cdn.simpleicons.org/github/dark"><img height="32" width="32" alt="github logo in dark and light mode." src="https://cdn.simpleicons.org/github/dark"></picture> از گیت هاب
-
-:bulb: فرمت کلی فایل های جدید به صورت `geoip-xx.srs` و `geosite-xx.srs` است. قسمت `xx` را با دسته بندی مورد نظر خود جایگزین کنید و مثل مثال زیر دانلود کنید:
-
-`Rule-Set` [https://raw.githubusercontent.com/Chocolate4U/Iran-sing-box-rules/rule-set/geoip-ir.srs](https://raw.githubusercontent.com/Chocolate4U/Iran-sing-box-rules/rule-set/geoip-ir.srs)  
-`Rule-Set` [https://raw.githubusercontent.com/Chocolate4U/Iran-sing-box-rules/rule-set/geosite-ir.srs](https://raw.githubusercontent.com/Chocolate4U/Iran-sing-box-rules/rule-set/geosite-ir.srs)
-
-`GeoIP` [https://raw.githubusercontent.com/Chocolate4U/Iran-sing-box-rules/release/geoip.db](https://raw.githubusercontent.com/Chocolate4U/Iran-sing-box-rules/release/geoip.db)  
-`GeoSite` [https://raw.githubusercontent.com/Chocolate4U/Iran-sing-box-rules/release/geosite.db](https://raw.githubusercontent.com/Chocolate4U/Iran-sing-box-rules/release/geosite.db)
-
-`GeoIP-Lite` [https://raw.githubusercontent.com/Chocolate4U/Iran-sing-box-rules/release/geoip-lite.db](https://raw.githubusercontent.com/Chocolate4U/Iran-sing-box-rules/release/geoip-lite.db)  
-`GeoSite-Lite` [https://raw.githubusercontent.com/Chocolate4U/Iran-sing-box-rules/release/geosite-lite.db](https://raw.githubusercontent.com/Chocolate4U/Iran-sing-box-rules/release/geosite-lite.db)
-
-`Security-IP` [https://raw.githubusercontent.com/Chocolate4U/Iran-sing-box-rules/release/security-ip.db](https://raw.githubusercontent.com/Chocolate4U/Iran-sing-box-rules/release/security-ip.db)  
-`Security` [https://raw.githubusercontent.com/Chocolate4U/Iran-sing-box-rules/release/security.db](https://raw.githubusercontent.com/Chocolate4U/Iran-sing-box-rules/release/security.db)
-
-## <picture><source media="(prefers-color-scheme: dark)" srcset="https://cdn.simpleicons.org/jsdelivr/white"><source media="(prefers-color-scheme: light)" srcset="https://cdn.simpleicons.org/jsdelivr/dark"><img height="32" width="32" alt="github logo in dark and light mode." src="https://cdn.simpleicons.org/jsdelivr/dark"></picture> از سرویس توزیع محتوای jsDelivr
-
-:bulb: فرمت کلی فایل های جدید به صورت `geoip-xx.srs` و `geosite-xx.srs` است. قسمت `xx` را با دسته بندی مورد نظر خود جایگزین کنید و مثل مثال زیر دانلود کنید:
-
-`Rule-Set` [https://cdn.jsdelivr.net/gh/chocolate4u/Iran-sing-box-rules@rule-set/geoip-ir.srs](https://cdn.jsdelivr.net/gh/chocolate4u/Iran-sing-box-rules@rule-set/geoip-ir.srs)  
-`Rule-Set` [https://cdn.jsdelivr.net/gh/chocolate4u/Iran-sing-box-rules@rule-set/geosite-ir.srs](https://cdn.jsdelivr.net/gh/chocolate4u/Iran-sing-box-rules@rule-set/geosite-ir.srs)
-
-`GeoIP` [https://cdn.jsdelivr.net/gh/chocolate4u/Iran-sing-box-rules@release/geoip.db](https://cdn.jsdelivr.net/gh/chocolate4u/Iran-sing-box-rules@release/geoip.db)  
-`GeoSite` [https://cdn.jsdelivr.net/gh/chocolate4u/Iran-sing-box-rules@release/geosite.db](https://cdn.jsdelivr.net/gh/chocolate4u/Iran-sing-box-rules@release/geosite.db)
-
-`GeoIP-Lite` [https://cdn.jsdelivr.net/gh/chocolate4u/Iran-sing-box-rules@release/geoip-lite.db](https://cdn.jsdelivr.net/gh/chocolate4u/Iran-sing-box-rules@release/geoip-lite.db)  
-`GeoSite-Lite` [https://cdn.jsdelivr.net/gh/chocolate4u/Iran-sing-box-rules@release/geosite-lite.db](https://cdn.jsdelivr.net/gh/chocolate4u/Iran-sing-box-rules@release/geosite-lite.db)
-
-`Security-IP` [https://cdn.jsdelivr.net/gh/chocolate4u/Iran-sing-box-rules@release/security-ip.db](https://cdn.jsdelivr.net/gh/chocolate4u/Iran-sing-box-rules@release/security-ip.db)  
-`Security` [https://cdn.jsdelivr.net/gh/chocolate4u/Iran-sing-box-rules@release/security.db](https://cdn.jsdelivr.net/gh/chocolate4u/Iran-sing-box-rules@release/security.db)
-
-# :computer: نحوه استفاده
-
-## هسته sing-box
-
-### Rule-Set (Requires sing-box v1.8.0+)
-
-قسمت زیر را به قسمت مسیریابی فایل کانفیگ خود اضافه کنید:
-
-```
-"outbounds": [
-  {
-    "type": "direct",
-    "tag": "direct"
-  },
-  {
-    "type": "block",
-    "tag": "block"
-  }
-],
-"route": {
-    "rules": [
-      {
-        "ip_is_private": true,
-        "outbound": "direct"
-      },
-      {
-        "rule_set": [
-          "geosite-category-ads-all",
-          "geosite-malware",
-          "geosite-phishing",
-          "geosite-cryptominers",
-          "geoip-malware",
-          "geoip-phishing"
-        ],
-        "outbound": "block"
-      },
-      {
-        "rule_set": [
-          "geosite-ir",
-          "geoip-ir"
-        ],
-        "outbound": "direct"
-      }
-    ],
-    "rule_set": [
-      {
-        "tag": "geosite-ir",
-        "type": "remote",
-        "format": "binary",
-        "url": "https://raw.githubusercontent.com/Chocolate4U/Iran-sing-box-rules/rule-set/geosite-ir.srs"
-      },
-      {
-        "tag": "geosite-category-ads-all",
-        "type": "remote",
-        "format": "binary",
-        "url": "https://raw.githubusercontent.com/Chocolate4U/Iran-sing-box-rules/rule-set/geosite-category-ads-all.srs"
-      },
-      {
-        "tag": "geosite-malware",
-        "type": "remote",
-        "format": "binary",
-        "url": "https://raw.githubusercontent.com/Chocolate4U/Iran-sing-box-rules/rule-set/geosite-malware.srs"
-      },
-      {
-        "tag": "geosite-phishing",
-        "type": "remote",
-        "format": "binary",
-        "url": "https://raw.githubusercontent.com/Chocolate4U/Iran-sing-box-rules/rule-set/geosite-phishing.srs"
-      },
-      {
-        "tag": "geosite-cryptominers",
-        "type": "remote",
-        "format": "binary",
-        "url": "https://raw.githubusercontent.com/Chocolate4U/Iran-sing-box-rules/rule-set/geosite-cryptominers.srs"
-      },
-      {
-        "tag": "geoip-ir",
-        "type": "remote",
-        "format": "binary",
-        "url": "https://raw.githubusercontent.com/Chocolate4U/Iran-sing-box-rules/rule-set/geoip-ir.srs"
-      },
-      {
-        "tag": "geoip-malware",
-        "type": "remote",
-        "format": "binary",
-        "url": "https://raw.githubusercontent.com/Chocolate4U/Iran-sing-box-rules/rule-set/geoip-malware.srs"
-      },
-      {
-        "tag": "geoip-phishing",
-        "type": "remote",
-        "format": "binary",
-        "url": "https://raw.githubusercontent.com/Chocolate4U/Iran-sing-box-rules/rule-set/geoip-phishing.srs"
-      }
-    ]
-  },
-  "experimental": {
-    "cache_file": {
-      "enabled": true
-    }
-  }
-```
-
-### DB
-
-قسمت زیر را به قسمت مسیریابی فایل کانفیگ خود اضافه کنید:
-
-```
-"outbounds": [
-  {
-    "type": "direct",
-    "tag": "direct"
-  },
-  {
-    "type": "block",
-    "tag": "block"
-  }
-],
-"route": {
-  "geoip": {
-      "download_url": "https://raw.githubusercontent.com/Chocolate4U/Iran-sing-box-rules/release/geoip.db"
-  },
-  "geosite": {
-    "download_url": "https://raw.githubusercontent.com/Chocolate4U/Iran-sing-box-rules/release/geosite.db"
-  },
-  "rules": [
-    {
-      "geosite": [
-        "category-ads-all",
-        "malware",
-        "phishing",
-        "cryptominers"
-      ],
-      "outbound": "block"
-    },
-    {
-      "geoip": [
-        "malware",
-        "phishing"
-      ],
-      "outbound": "block"
-    },
-    {
-      "geosite": "ir",
-      "outbound": "direct"
-    },
-    {
-      "geoip": [
-        "ir",
-        "private"
-      ],
-      "outbound": "direct"
-    }
-  ]
-}
-```
 
 # :information_desk_person: این ها چطوری ساخته شدن؟
 
