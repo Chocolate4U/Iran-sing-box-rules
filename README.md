@@ -300,7 +300,6 @@ Add the following to your sing-box client configuration:
   Contains Active Malware IP addresses.
 </details>
 
-## GeoIP-Lite
 <details>
   <summary><strong>Categories in <code>geoip-lite.db</code></strong></summary>
 
@@ -311,7 +310,6 @@ Add the following to your sing-box client configuration:
   Contains a list of local (LAN) IP addresses.
 </details>
 
-## Security-IP
 <details>
   <summary><strong>Categories in <code>security-ip.db</code></strong></summary>
 
@@ -322,7 +320,6 @@ Add the following to your sing-box client configuration:
   Contains Active Malware IP addresses.
 </details>
 
-## GeoIP-Services
 <details>
   <summary><strong>Categories in <code>geoip-services.db</code></strong></summary>
 
@@ -409,7 +406,6 @@ Add the following to your sing-box client configuration:
   Contains a list of porn and gambling websites.
 </details>
 
-## GeoSite-Lite
 <details>
   <summary><strong>Categories in <code>geosite-lite.db</code></strong></summary>
 
@@ -421,7 +417,6 @@ Add the following to your sing-box client configuration:
   Contains a list of Persian advertisement and tracking domains.
 </details>
 
-## Security
 <details>
   <summary><strong>Categories in <code>security.db</code></strong></summary>
 

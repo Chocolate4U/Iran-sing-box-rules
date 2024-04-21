@@ -300,7 +300,6 @@
 </ul>
 </details>
 
-<h2 dir="rtl">GeoIP-Lite</h2>
 <details dir="rtl">
   <summary><strong>دسته‌های موجود در<code>geoip-lite.db</code></strong></summary>
 
@@ -313,7 +312,6 @@
 </ul>
 </details>
 
-<h2 dir="rtl">Security-IP</h2>
 <details dir="rtl">
   <summary><strong>دسته‌های موجود در<code>security-ip.db</code></strong></summary>
 
@@ -326,7 +324,6 @@
 </ul>
 </details>
 
-<h2 dir="rtl">GeoIP-Services</h2>
 <details dir="rtl">
   <summary><strong>دسته‌های موجود در<code>geoip-services.db</code></strong></summary>
 
@@ -417,7 +414,6 @@
 </ul>
 </details>
 
-<h2 dir="rtl">GeoSite-Lite</h2>
 <details dir="rtl">
   <summary><strong>دسته‌های موجود در<code>geosite-lite.db</code></strong></summary>
 
@@ -434,7 +430,6 @@
 </ul>
 </details>
 
-<h2 dir="rtl">Security</h2>
 <details dir="rtl">
   <summary><strong>دسته‌های موجود در<code>security.db</code></strong></summary>
 
